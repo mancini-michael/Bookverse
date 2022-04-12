@@ -2,6 +2,14 @@
 
 :root {
   --navbar-fs: 15px;
+  --background-image: url("../img/background-1.jpg");
+  --background-height: 750px;
+  --welcome-h1-fs: 150px;
+  --welcome-span-fs: 20px;
+  --welcome-i-fs: 35px;
+  --welcome-h1-fs-sm: 100px;
+  --welcome-span-fs-sm: 15px;
+  --welcome-i-fs-sm: 20px;
 }
 
 * {
@@ -14,5 +22,4 @@
 body,
 html {
   height: 100%;
-  max-height: 100%;
 }
