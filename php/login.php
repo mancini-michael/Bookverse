@@ -15,8 +15,7 @@
             $dbconn = pg_connect("host=localhost port=5432 dbname=bookverse user=postgres password=admin") or die('Could not connect: ' . pg_last_error());
             $email = $_POST["inputEmail"];
             $query = 'SELECT * FROM users WHERE email=$1';
-            $result = pg_query_params($dbconn, $query, 
-                array ($email));
+            $result = pg_query_params($dbconn, $query, array ($email));
             if (!$tuple=pg_fetch_array($result, null, PGSQL_ASSOC)) {
                 header ("Location: ../pages/login.html");
             }
@@ -25,7 +24,7 @@
                 $met_enc = 'aes256';
                 $iv = 'mD1g7i9fD56_hf12';
                 $password = $_POST["inputPassword"];
-                $pass_enc = 'SELECT password FROM users WHERE email=$1';
+                $pass_enc = 'SELECT passw FROM users WHERE email=$1';
                 $result_enc = pg_query_params($dbconn, $pass_enc, array ($email));
                 $row = pg_fetch_row($result_enc);
                 $pass_enc_ok = $row[0];
@@ -34,7 +33,8 @@
                     echo "Login effettuato correttamente";
                 }
                 else {
-                    header ("Location: ../pages/login.html");
+                    echo "errore";
+                    // header ("Location: ../pages/login.html");
                 }
             }
         }
