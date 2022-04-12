@@ -23,6 +23,8 @@
   --arrow-margin: 20px;
   --time-animation: 0.5s;
   --welcome-btn-fs: 20px;
+  --login-height: calc(100vh - var(--footer-height));
+  --registration-height: calc(100vh - var(--footer-height));
 }
 
 * {
@@ -35,4 +37,61 @@
 body,
 html {
   height: 100vh;
+}
+
+/* Footer */
+footer {
+  height: var(--footer-height);
+  font-size: var(--footer-fs);
+}
+
+/* Arrow */
+#arrow {
+  display: none;
+  position: fixed;
+  bottom: var(--arrow-margin);
+  right: var(--arrow-margin);
+  z-index: auto;
+}
+
+#arrow a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--arrow-dimension);
+  width: var(--arrow-dimension);
+  border-radius: 100%;
+  background-color: cornflowerblue;
+}
+
+.btnEntry {
+  animation-duration: var(--time-animation);
+  animation-fill-mode: both;
+  animation-name: btnEntry;
+}
+
+@keyframes btnEntry {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.btnExit {
+  animation-duration: var(--time-animation);
+  animation-fill-mode: both;
+  animation-name: btnExit;
+}
+
+@keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
 }

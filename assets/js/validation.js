@@ -1,5 +1,5 @@
 /* Validation of form */
-const validateForm = () => {
+const validateRegistration = () => {
   if (document.dati.inputNome.value == "") {
     alert("Il campo Nome è vuoto");
     return false;
