@@ -47,6 +47,12 @@
   font-size: var(--content-h1-fs);
 }
 
+/* Footer */
+footer {
+  height: var(--footer-height);
+  font-size: var(--footer-fs);
+}
+
 /* Arrow */
 #arrow {
   display: none;

@@ -11,6 +11,8 @@
   --welcome-span-fs-sm: 15px;
   --welcome-i-fs-sm: 20px;
   --content-h1-fs: 80px;
+  --footer-fs: 10px;
+  --footer-height: 60px;
 }
 
 * {
