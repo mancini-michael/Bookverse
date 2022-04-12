@@ -37,6 +37,10 @@
   color: black;
 }
 
+.content {
+  height: 100%;
+}
+
 /* Arrow */
 #arrow {
   display: none;

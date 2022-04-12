@@ -1,19 +1,30 @@
+/* Navbar Listener */
+const HideNavbar = () => {
+  $(".navbar-collapse a").click(() => {
+    $(".navbar-collapse").collapse("hide");
+  });
+};
+
+HideNavbar();
+
 /* Arrow Listener */
+const arrow = document.querySelector("#arrow");
+
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
-    if (!document.querySelector("#arrow").classList.contains("btnEntry")) {
-      document.querySelector("#arrow").classList.remove("btnExit");
-      document.querySelector("#arrow").classList.add("btnEntry");
+    if (!arrow.classList.contains("btnEntry")) {
+      arrow.classList.remove("btnExit");
+      arrow.classList.add("btnEntry");
       setTimeout(() => {
-        document.querySelector("#arrow").style.display = "block";
+        arrow.style.display = "block";
       }, 150);
     }
   } else {
-    if (!document.querySelector("#arrow").classList.contains("btnExit")) {
-      document.querySelector("#arrow").classList.remove("btnEntry");
-      document.querySelector("#arrow").classList.add("btnExit");
+    if (!arrow.classList.contains("btnExit")) {
+      arrow.classList.remove("btnEntry");
+      arrow.classList.add("btnExit");
       setTimeout(() => {
-        document.querySelector("#arrow").style.display = "none";
+        arrow.style.display = "none";
       }, 150);
     }
   }
