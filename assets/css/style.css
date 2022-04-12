@@ -10,7 +10,7 @@
   --welcome-h1-fs-sm: 100px;
   --welcome-span-fs-sm: 15px;
   --welcome-i-fs-sm: 20px;
-  --content-h1-fs: 80px;
+  --content-h1-fs: 60px;
   --footer-fs: 10px;
   --footer-height: 60px;
 }
@@ -24,5 +24,5 @@
 
 body,
 html {
-  height: 100%;
+  height: 100vh;
 }

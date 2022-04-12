@@ -39,12 +39,16 @@
 
 /* Content */
 .content {
-  height: 100%;
+  height: auto;
 }
 
 .content h1 {
   font-family: "Babylonica", cursive;
   font-size: var(--content-h1-fs);
+}
+
+textarea {
+  resize: none;
 }
 
 /* Footer */
