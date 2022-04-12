@@ -11,9 +11,7 @@
     if (!isset($_POST["reg"])) {
         header("Location: ..");
     } else {
-        $dbconn = pg_connect("host=localhost port=5432
-            dbname=loginbook user=postgres password=Albiotibullo1!") 
-            or die('Could not connect: ' . pg_last_error());
+        $dbconn = pg_connect("host=localhost port=5432 dbname=bookverse user=postgres password=admin") or die('Could not connect: ' . pg_last_error());
         $email = $_POST["inputEmail"];
         $query = "SELECT * FROM users WHERE email=$1";
         $result = pg_query_params($dbconn, $query, array($email));
@@ -34,8 +32,7 @@
             $iv = 'mD1g7i9fD56_hf12';
             $pass_enc = openssl_encrypt ($password, $met_enc, $key_enc, 0, $iv);
             $query2 = 'INSERT INTO users VALUES ($1,$2,$3,$4,$5,$6,$7)';
-            $result = pg_query_params($dbconn, $query2, 
-                array ($nome, $cognome, $email, $pass_enc, $indirizzo, $citta, $cap));
+            $result = pg_query_params($dbconn, $query2, array ($nome, $cognome, $email, $pass_enc, $indirizzo, $citta, $cap));
             if ($result) {
                 echo "<p>la registrazione è andata a buon fine</p>";
                 echo "<p>utilizza il seguente comando per loggarti </p>";

@@ -12,9 +12,7 @@
             header ("Location: ..");
         }
         else {
-            $dbconn = pg_connect("host=localhost port=5432
-                dbname=loginbook user=postgres password=Albiotibullo1!") 
-                or die('Could not connect: ' . pg_last_error());
+            $dbconn = pg_connect("host=localhost port=5432 dbname=bookverse user=postgres password=admin") or die('Could not connect: ' . pg_last_error());
             $email = $_POST["inputEmail"];
             $query = 'SELECT * FROM users WHERE email=$1';
             $result = pg_query_params($dbconn, $query, 
@@ -28,8 +26,7 @@
                 $iv = 'mD1g7i9fD56_hf12';
                 $password = $_POST["inputPassword"];
                 $pass_enc = 'SELECT password FROM users WHERE email=$1';
-                $result_enc = pg_query_params($dbconn, $pass_enc, 
-                    array ($email));
+                $result_enc = pg_query_params($dbconn, $pass_enc, array ($email));
                 $row = pg_fetch_row($result_enc);
                 $pass_enc_ok = $row[0];
                 $pass_dec = openssl_decrypt($pass_enc_ok, $met_enc, $key_enc, 0, $iv);
