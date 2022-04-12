@@ -10,7 +10,7 @@
     <h1>Catalogo</h1>
     <?php
         $dbconn = pg_connect("host=localhost port=5432
-                              dbname=loginbook user=postgres password=...") 
+                              dbname=loginbook user=postgres password=Zainetto01") 
                               or die('Could not connect: ' . pg_last_error());
         $query = 'SELECT * FROM books_catalogue';
         $result = pg_query_params($dbconn, $query, array ());
@@ -20,7 +20,7 @@
         echo "<table>";
         echo "<tr><th>Nome</th><th>Autore</th><th>Prezzo</th><th>Data Uscita</th><th>Descrizione</th><th>Img</th><th>isbn</th></tr>";
         for ($i=0; $i<$arrLen; $i++) {
-            $nome = $libri[$i]['nome'];
+            $nome = $libri[$i]['titolo'];
             $autore = $libri[$i]['autore'];
             $prezzo = $libri[$i]['prezzo'];
             $data_rilascio = $libri[$i]['data_rilascio'];
