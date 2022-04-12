@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Registrazione</title>
-</head>
-<body>
 <?php
-    if (!isset($_POST["reg"])) {
-        header("Location: ..");
-    } else {
         $dbconn = pg_connect("host=localhost port=5432 dbname=bookverse user=postgres password=admin") or die('Could not connect: ' . pg_last_error());
         $email = $_POST["inputEmail"];
         $query = "SELECT * FROM users WHERE email=$1";
@@ -34,15 +22,10 @@
             $query2 = 'INSERT INTO users VALUES ($1,$2,$3,$4,$5,$6,$7)';
             $result = pg_query_params($dbconn, $query2, array ($nome, $cognome, $email, $pass_enc, $indirizzo, $citta, $cap));
             if ($result) {
-                echo "<p>la registrazione è andata a buon fine</p>";
-                echo "<p>utilizza il seguente comando per loggarti </p>";
-                echo "<a href=\"../pages/login.html\"></a>";
+                header("location: ../pages/login.html");
             }
             else {
-                die ("C'è stato un errore :-(" . pg_last_error());
+                die ("C'è stato un errore: " . pg_last_error());
             }
         }
-    } 
-?>    
-</body>
-</html>
+?>
