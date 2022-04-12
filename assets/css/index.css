@@ -34,11 +34,17 @@
 }
 
 .welcome a:hover {
-  color: black;
+  color: cornflowerblue;
 }
 
+/* Content */
 .content {
   height: 100%;
+}
+
+.content h1 {
+  font-family: "Babylonica", cursive;
+  font-size: var(--content-h1-fs);
 }
 
 /* Arrow */
