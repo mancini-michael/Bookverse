@@ -53,8 +53,8 @@
 
 .picture {
   border-radius: 100%;
-  height: 200px;
-  width: 200px;
+  height: var(--picture-dimension);
+  width: var(--picture-dimension);
   background-color: white;
   color: black;
 }
@@ -63,6 +63,28 @@
   font-family: "Montserrat", sans-serif;
   font-style: italic;
   font-size: var(--matricola-fs);
+}
+
+.catalog,
+.history,
+.contact {
+  height: var(--service-dimension);
+  width: var(--service-dimension);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.catalog {
+  background-image: var(--catalog);
+}
+
+.history {
+  background-image: var(--history);
+}
+
+.contact {
+  background-image: var(--contact);
 }
 
 textarea {
@@ -79,8 +101,8 @@ footer {
 #arrow {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: var(--arrow-margin);
+  right: var(--arrow-margin);
   z-index: auto;
 }
 
@@ -88,14 +110,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
-  width: 60px;
+  height: var(--arrow-dimension);
+  width: var(--arrow-dimension);
   border-radius: 100%;
   background-color: cornflowerblue;
 }
 
 .btnEntry {
-  animation-duration: 0.5s;
+  animation-duration: var(--time-animation);
   animation-fill-mode: both;
   animation-name: btnEntry;
 }
@@ -111,7 +133,7 @@ footer {
 }
 
 .btnExit {
-  animation-duration: 0.5s;
+  animation-duration: var(--time-animation);
   animation-fill-mode: both;
   animation-name: btnExit;
 }

@@ -14,6 +14,14 @@
   --footer-fs: 10px;
   --footer-height: 60px;
   --matricola-fs: 12px;
+  --catalog: url("../img/catalog.jpg");
+  --history: url("../img/shopping-bag.jpg");
+  --contact: url("../img/contact.jpg");
+  --service-dimension: 250px;
+  --picture-dimension: 200px;
+  --arrow-dimension: 60px;
+  --arrow-margin: 20px;
+  --time-animation: 0.5s;
 }
 
 * {
