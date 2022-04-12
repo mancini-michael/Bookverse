@@ -14,11 +14,10 @@
                               or die('Could not connect: ' . pg_last_error());
         $query = 'SELECT * FROM books_catalogue';
         $result = pg_query_params($dbconn, $query, array ());
-        echo "Il nostro catalogo<br>";
         $libri = pg_fetch_all ($result);
         $arrLen = count ($libri);
-        echo "<table>";
-        echo "<tr><th>Nome</th><th>Autore</th><th>Prezzo</th><th>Data Uscita</th><th>Descrizione</th><th>Img</th><th>isbn</th></tr>";
+        echo "<table style=\"border: 1px solid;\">";
+        echo "<tr><th>Copertina</th><th>Autore</th><th>Titolo</th><th>Data Uscita</th><th>ISBN</th><th>Prezzo</th><th>Descrizione</th></tr>";
         for ($i=0; $i<$arrLen; $i++) {
             $nome = $libri[$i]['titolo'];
             $autore = $libri[$i]['autore'];
@@ -27,9 +26,7 @@
             $descrizione = $libri[$i]['descrizione'];
             $img = $libri[$i]['img'];
             $isbn = $libri[$i]['isbn'];
-            echo "<div>". 
-                    "<tr><td>$nome</td><td>$autore</td><td>$prezzo</td><td>$data_rilascio</td><td>$descrizione</td><td><img style=\"height: 300px;\" src=\"$img\"></td><td>$isbn</td></tr>" .
-                 "</div>";
+            echo "<tr><td><img style=\"height: 300px;\" src=\"$img\"><td>$autore</td><td>$nome</td><td>$data_rilascio</td><td>$isbn</td><td>$prezzo</td><td>$descrizione</td></tr>";
         }
     ?>
 </body>
