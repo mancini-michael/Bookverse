@@ -37,6 +37,14 @@
   color: cornflowerblue;
 }
 
+.welcome .welcome-btn {
+  font-size: var(--welcome-btn-fs);
+}
+
+.welcome .welcome-btn:hover {
+  color: black;
+}
+
 /* Content */
 .content {
   height: auto;

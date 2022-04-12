@@ -22,6 +22,7 @@
   --arrow-dimension: 60px;
   --arrow-margin: 20px;
   --time-animation: 0.5s;
+  --welcome-btn-fs: 20px;
 }
 
 * {
