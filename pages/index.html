@@ -47,7 +47,9 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active fw-bold" href="../php/catalogo.php">Catalogo</a>
+              <a class="nav-link active fw-bold" href="../php/catalogo.php"
+                >Catalogo</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link active fw-bold" href="#AboutUs">Chi Siamo</a>
@@ -116,7 +118,9 @@
           <div class="text-center my-2">
             <span class="text-white">Sfoglia il catalogo</span>
             <br />
-            <a href="../php/catalogo.php" class="btn btn-primary my-2">Catalogo</a>
+            <a href="../php/catalogo.php" class="btn btn-primary my-2"
+              >Catalogo</a
+            >
           </div>
         </div>
         <div class="col mx-5 my-2">
@@ -182,13 +186,14 @@
         </span>
         <!-- Form -->
         <div class="text-start bg-dark rounded-3 my-3 py-3">
-          <form action="#" method="post" class="m-3">
+          <form action="../php/send-comment.php" method="post" class="m-3">
             <div class="my-2">
               <label for="email" class="form-label m-0">Indirizzo email</label>
               <input
                 type="email"
                 class="form-control"
                 id="email"
+                name="email"
                 placeholder="Inserisci la tua mail..."
                 required
               />
