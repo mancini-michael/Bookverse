@@ -103,31 +103,66 @@
       <!--/ Our Service  -->
 
       <!-- About Us -->
-      <div class="text-center text-white mx-5 pb-5" id="AboutUs">
+      <div class="text-center text-white mx-5" id="AboutUs">
         <h1 class="m-0">Chi siamo</h1>
         <span>
           Bookverse è la tua libreria personale, sempre disponibile e in
           continuo miglioramento.
           <br />
-          Inizia effettuando la registrazione alla libreria ed effettua
-          l'accesso per iniziare ad acquistare i tuoi libri preferiti!
+          Inizia effettuando la
+          <a class="link-info" href="#Registrazione">registrazione</a> alla
+          libreria ed effettua l'
+          <a class="link-info" href="#Accedi"> accesso </a>
+          per iniziare ad acquistare i tuoi libri preferiti!
         </span>
+
+        <div class="container row text-center my-5">
+          <span class="my-2">
+            Progetto pratico per linguaggi e tecnlogie per il web realizzato da:
+          </span>
+          <div class="col my-2">
+            <div
+              class="picture d-flex justify-content-center align-items-center mx-auto mb-2"
+            >
+              <h1 class="m-0">M</h1>
+            </div>
+            <span>Michael Mancini</span>
+            <br />
+            <span class="matricola">1884654</span>
+          </div>
+          <div class="col my-2">
+            <div
+              class="picture picture d-flex justify-content-center align-items-center mx-auto mb-2"
+            >
+              <h1 class="m-0">L</h1>
+            </div>
+            <span>Lorenzo Gizzi</span>
+            <br />
+            <span class="matricola">1907374</span>
+          </div>
+        </div>
       </div>
       <!--/ About Us -->
 
       <!-- Our Social -->
-      <div class="text-center text-white mx-5 py-3" id="Contacts">
+      <div class="text-center text-white mx-5 pb-3" id="Contacts">
         <h1 class="m-0">Contatti</h1>
         <span>
           Contattaci con un messaggio o una mail, oppure tramite i nostri
           social!
         </span>
         <!-- Form -->
-        <div class="container text-start bg-dark rounded-3 my-3 py-3">
+        <div class="text-start bg-dark rounded-3 my-3 py-3">
           <form action="#" method="post" class="m-3">
             <div class="my-2">
               <label for="email" class="form-label m-0">Indirizzo email</label>
-              <input type="email" class="form-control" id="email" required />
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Inserisci la tua mail..."
+                required
+              />
             </div>
             <div class="mb-2">
               <label for="description" class="form-label m-0">
@@ -139,6 +174,7 @@
                 class="form-control"
                 id="description"
                 rows="10"
+                placeholder="Aggiungi una descrizione..."
                 required
               ></textarea>
             </div>
