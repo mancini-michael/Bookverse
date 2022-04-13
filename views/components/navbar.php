@@ -10,12 +10,12 @@
           <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav text-center mx-2">
                   <li class="nav-item">
-                      <a class="nav-link active fw-bold" aria-current="page" href="/">
+                      <a class="nav-link active fw-bold" aria-current="page" href="./index.php">
                           Home
                       </a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link active fw-bold" href="../catalogo.php">Catalogo</a>
+                      <a class="nav-link active fw-bold" href="./catalog.php">Catalogo</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link active fw-bold" href="#AboutUs">Chi Siamo</a>

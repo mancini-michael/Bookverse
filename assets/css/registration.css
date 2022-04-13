@@ -8,6 +8,11 @@
   height: var(--registration-height);
 }
 
+.registration h1 {
+  font-family: "Babylonica", cursive;
+  font-size: var(--welcome-h1-fs);
+}
+
 .registration span,
 .registration label {
   color: white;
@@ -15,4 +20,26 @@
 
 span a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+  .registration h1 {
+    font-family: "Babylonica", cursive;
+    font-size: var(--welcome-h1-fs-sm);
+  }
+
+  .registration span {
+    font-size: var(--welcome-span-fs-sm);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .registration h1 {
+    font-family: "Babylonica", cursive;
+    font-size: var(--welcome-h1-fs-sm);
+  }
+
+  .registration span {
+    font-size: var(--welcome-span-fs-sm);
+  }
 }

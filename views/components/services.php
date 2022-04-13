@@ -6,9 +6,9 @@
             continuo miglioramento.
             <br />
             Inizia effettuando la
-            <a class="link-info" href="../registration.php">registrazione</a> alla
+            <a class="link-info" href="./registration.php">registrazione</a> alla
             libreria ed effettua l'
-            <a class="link-info" href="../login.php"> accesso </a>
+            <a class="link-info" href="./login.php"> accesso </a>
             per iniziare ad acquistare i tuoi libri preferiti!
         </span>
     </div>
@@ -19,7 +19,7 @@
             <div class="text-center my-2">
                 <span class="text-white">Sfoglia il catalogo</span>
                 <br />
-                <a href="../catalogo.php" class="btn btn-primary my-2">Catalogo</a>
+                <a href="./catalog.php" class="btn btn-primary my-2">Catalogo</a>
             </div>
         </div>
         <div class="col mx-5 my-2">
