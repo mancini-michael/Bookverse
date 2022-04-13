@@ -14,17 +14,17 @@
 
 <body>
 
-    <?php include("./components/navbar.php"); ?>
+    <?php include("../components/navbar.php"); ?>
 
     <div class="catalog text-center text-white mx-auto mt-5 pt-5">
         <h1 class="m-0">Catalogo</h1>
         <span>Sfoglia il catalogo per trovare il libro che cerchi!</span>
-        <?php include("./functions/render-catalog.php"); ?>
+        <?php include("../php/render-catalog.php"); ?>
     </div>
 
-    <?php include("./components/footer.php"); ?>
+    <?php include("../components/footer.php"); ?>
 
-    <?php include("./components/arrow.php"); ?>
+    <?php include("../components/arrow.php"); ?>
 
 
     <!-- Bootstrap JavaScript -->

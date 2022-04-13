@@ -16,12 +16,17 @@ include("../php/welcome.php");
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/welcome.css" />
 </head>
 
 <body>
 
     <?php include("../components/navbar.php"); ?>
+
+    <div class="welcome text-center text-white mx-auto mt-5 pt-5">
+        <h1 class="m-0">Catalogo</h1>
+        <span>Sfoglia il catalogo per trovare il libro che cerchi!</span>
+    </div>
 
     <?php include("../components/footer.php"); ?>
 
