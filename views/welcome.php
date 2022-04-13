@@ -12,7 +12,7 @@ include("../php/welcome.php");
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Bookverse</title>
+    <title>Homepage</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
@@ -23,9 +23,8 @@ include("../php/welcome.php");
 
     <?php include("../components/navbar.php"); ?>
 
-    <div class="welcome text-center text-white mx-auto mt-5 pt-5">
-        <h1 class="m-0">Catalogo</h1>
-        <span>Sfoglia il catalogo per trovare il libro che cerchi!</span>
+    <div class="content bg-black">
+        <?php include("../components/about-us.php") ?>
     </div>
 
     <?php include("../components/footer.php"); ?>

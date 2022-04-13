@@ -22,6 +22,33 @@ span a {
   text-decoration: none;
 }
 
+.content {
+  height: auto;
+}
+
+.content h1 {
+  font-family: "Babylonica", cursive;
+  font-size: var(--content-h1-fs);
+}
+
+.content a {
+  text-decoration: none;
+}
+
+.picture {
+  border-radius: 100%;
+  height: var(--picture-dimension);
+  width: var(--picture-dimension);
+  background-color: white;
+  color: black;
+}
+
+.matricola {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-size: var(--matricola-fs);
+}
+
 @media screen and (max-width: 992px) {
   .welcome h1 {
     font-family: "Babylonica", cursive;

@@ -27,7 +27,7 @@
             <div class="text-center my-2">
                 <span class="text-white">Visualizza i tuoi acquisti</span>
                 <br />
-                <a href="#History" class="btn btn-primary my-2">Acquisti</a>
+                <a href="./welcome.php" class="btn btn-primary my-2">Acquisti</a>
             </div>
         </div>
         <div class="col mx-5 my-2">
