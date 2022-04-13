@@ -6,7 +6,7 @@ $description = $_POST["description"];
 $query = "INSERT INTO comments VALUES ($1, $2)";
 $result = pg_query_params($connection, $query, array($email, $description));
 if (!$result) {
-    die("Errore nell'invio: " . pg_last_error());
+    header("Location: ../index.php?send=errore#comment-form");
 } else {
-    header("Location: ../index.php");
+    header("Location: ../index.php?send=inviato#comment-form");
 }
