@@ -9,7 +9,7 @@ $result = pg_query_params($connection, $query, array($email));
 $tuple = pg_fetch_array($result, null, PGSQL_ASSOC);
 
 if (!$tuple) {
-    header("Location: ../views/login.php");
+    header("Location: ../views/login.php?mail=wrong");
     exit;
 }
 

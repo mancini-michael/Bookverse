@@ -7,6 +7,16 @@
 
         <?php
 
+        if (isset($_GET["mail"])) {
+            echo "<div class=\"container alert alert-danger text-center\">
+                    Email errata.
+                  </div>";
+        }
+
+        ?>
+
+        <?php
+
         if (isset($_GET["passw"])) {
             echo "<div class=\"container alert alert-danger text-center\">
                     Password errata.
