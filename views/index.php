@@ -16,6 +16,8 @@
 
   <?php session_start(); ?>
 
+  <?php require_once "./functions/config.php" ?>
+
   <?php include("./components/navbar.php"); ?>
 
   <?php include("./components/welcome.php"); ?>
