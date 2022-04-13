@@ -1,3 +1,10 @@
+<?php
+
+include("../php/welcome.php");
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="it">
 
