@@ -23,6 +23,8 @@ include("../php/welcome.php");
 
     <?php include("../components/navbar.php"); ?>
 
+    <?php include("../components/welcome.php"); ?>
+
     <div class="content bg-black">
         <?php include("../components/about-us.php") ?>
     </div>
