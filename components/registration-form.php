@@ -4,6 +4,17 @@
             <h1 class="m-0">Bookverse</h1>
             <span>La tua libreria virtuale</span>
         </div>
+
+        <?php
+
+        if (isset($_GET["send"])) {
+            echo "<div class=\"container alert alert-danger text-center\">
+                    Utente già registrato alla libreria.
+                  </div>";
+        }
+
+        ?>
+
         <form action="../php/registration.php" class="form-check text-center" name="dati" onsubmit="return validateRegistration();" method="POST">
             <div class="d-flex justify-content-center align-items-center flex-column">
                 <input type="text" class="col m-2" name="inputNome" placeholder="Nome" size="28" />
@@ -20,7 +31,7 @@
                 <input type="submit" class="btn btn-primary mb-2" name="reg" value="Registrati" />
                 <span class="mb-2">
                     Sei già un utente della libreria?
-                    <a href="../login.php">Accedi</a>
+                    <a href="../views/login.php">Accedi</a>
                 </span>
             </div>
         </form>

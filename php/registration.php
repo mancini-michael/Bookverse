@@ -1,13 +1,13 @@
 <?php
 
-require_once("./config.php");
+require_once("config.php");
 
 $email = $_POST["inputEmail"];
 $query = "SELECT * FROM users WHERE email=$1";
 $result = pg_query_params($connection, $query, array($email));
 
 if ($tuple = pg_fetch_array($result, null, PGSQL_ASSOC)) {
-    header("Location: ../registration.php?send=esiste");
+    header("Location: ../views/registration.php?send=esiste");
     exit;
 }
 
@@ -28,4 +28,4 @@ if (!$result) {
     die("ERRORE: inserimento nel database non riuscito");
 }
 
-header("location: ../login.php");
+header("location: ../views/login.php");

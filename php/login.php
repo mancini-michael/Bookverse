@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-require_once("./config.php");
+require_once("config.php");
 
 $email = $_POST["inputEmail"];
 $query = 'SELECT * FROM users WHERE email=$1';
@@ -9,7 +9,7 @@ $result = pg_query_params($connection, $query, array($email));
 $tuple = pg_fetch_array($result, null, PGSQL_ASSOC);
 
 if (!$tuple) {
-    header("Location: ../login.php");
+    header("Location: ../views/login.php");
     exit;
 }
 
@@ -24,8 +24,8 @@ $pass_enc_ok = $row[0];
 $pass_dec = openssl_decrypt($pass_enc_ok, $met_enc, $key_enc, 0, $iv);
 
 if ($password != $pass_dec) {
-    header("Location: ../login.php?passw=wrong");
+    header("Location: ../views/login.php?passw=wrong");
     exit;
 }
 
-header("Location: ../welcome.php");
+header("Location: ../views/welcome.php");
