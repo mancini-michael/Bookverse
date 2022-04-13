@@ -23,7 +23,7 @@
                 <input type="password" class="mb-2" name="inputPassword" placeholder="Password" size="28" />
                 <input type="text" class="mb-2" name="inputIndirizzo" placeholder="Indirizzo" size="28" />
                 <input type="text" class="mb-2" name="inputCitta" placeholder="Città" size="28" />
-                <input type="number" class="mb-2" name="CAP" placeholder="CAP" size="28" />
+                <input type="text" class="mb-2" name="CAP" placeholder="CAP" size="28" pattern="[0-9]{5}"/>
                 <div class="checkbox mb-2">
                     <input type="checkbox" class="mx-2" id="inputCheck" name="inputCheck" />
                     <label for="inputCheck">Acconsento all'invio dei miei dati</label>
