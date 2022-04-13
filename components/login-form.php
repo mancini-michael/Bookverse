@@ -4,7 +4,7 @@
             <h1 class="m-0">Bookverse</h1>
             <span>La tua libreria virtuale</span>
         </div>
-        <form action="./functions/login.php" class="form-check text-center" name="dati" onsubmit="return validateLogin();" method="POST">
+        <form action="../php/login.php" class="form-check text-center" name="dati" onsubmit="return validateLogin();" method="POST">
             <div class="d-flex justify-content-center align-items-center flex-column mb-auto">
                 <input type="email" name="inputEmail" placeholder="Email" size="28" />
                 <input type="password" class="my-2" name="inputPassword" placeholder="Password" size="28" />

@@ -6,7 +6,7 @@
             social!
         </span>
 
-        <?php include("./components/comment-form.php"); ?>
+        <?php include("comment-form.php"); ?>
 
         <div class="container text-center mt-3">
             <a class="navbar-brand mx-2" href="#Mail">

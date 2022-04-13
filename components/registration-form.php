@@ -4,7 +4,7 @@
             <h1 class="m-0">Bookverse</h1>
             <span>La tua libreria virtuale</span>
         </div>
-        <form action="./functions/registration.php" class="form-check text-center" name="dati" onsubmit="return validateRegistration();" method="POST">
+        <form action="../php/registration.php" class="form-check text-center" name="dati" onsubmit="return validateRegistration();" method="POST">
             <div class="d-flex justify-content-center align-items-center flex-column">
                 <input type="text" class="col m-2" name="inputNome" placeholder="Nome" size="28" />
                 <input type="text" class="mb-2" name="inputCognome" placeholder="Cognome" size="28" />

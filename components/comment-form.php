@@ -23,7 +23,7 @@
     ?>
 
 
-    <form action="./functions/send-comment.php" method="post" class="m-3">
+    <form action="../php/send-comment.php" method="post" class="m-3">
         <div class="my-2">
             <label for="email" class="form-label m-0">Indirizzo email</label>
             <input type="email" class="form-control" id="email" name="email" placeholder="Inserisci la tua mail..." required />

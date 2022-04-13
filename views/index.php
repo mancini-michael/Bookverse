@@ -16,17 +16,17 @@
 
   <?php session_start(); ?>
 
-  <?php require_once "./functions/config.php" ?>
+  <?php require_once("../php/config.php"); ?>
 
-  <?php include("./components/navbar.php"); ?>
+  <?php include("../components/navbar.php"); ?>
 
-  <?php include("./components/welcome.php"); ?>
+  <?php include("../components/welcome.php"); ?>
 
-  <?php include("./components/index-content.php"); ?>
+  <?php include("../components/index-content.php"); ?>
 
-  <?php include("./components/footer.php"); ?>
+  <?php include("../components/footer.php"); ?>
 
-  <?php include("./components/arrow.php"); ?>
+  <?php include("../components/arrow.php"); ?>
 
   <!-- Bootstrap JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
