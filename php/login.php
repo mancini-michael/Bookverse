@@ -28,4 +28,7 @@ if ($password != $pass_dec) {
     exit;
 }
 
+$_SESSION["loggedin"] = true;
 header("Location: ../views/welcome.php");
+
+pg_close($connection);

@@ -13,3 +13,5 @@ if (!$result) {
 }
 
 header("Location: ../views/index.php?send=inviato#comment-form");
+
+pg_close($connection);

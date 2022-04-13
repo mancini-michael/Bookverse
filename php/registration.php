@@ -29,3 +29,5 @@ if (!$result) {
 }
 
 header("location: ../views/login.php");
+
+pg_close($connection);

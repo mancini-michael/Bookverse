@@ -14,10 +14,6 @@
 
 <body>
 
-  <?php session_start(); ?>
-
-  <?php require_once("../php/config.php"); ?>
-
   <?php include("../components/navbar.php"); ?>
 
   <?php include("../components/welcome.php"); ?>
