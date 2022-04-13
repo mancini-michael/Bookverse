@@ -39,6 +39,16 @@ html {
   height: 100vh;
 }
 
+/* Navbar */
+.navbar {
+  font-size: var(--navbar-fs);
+}
+
+.container-fluid .navbar-brand:hover,
+.navbar-nav .nav-item .nav-link:hover {
+  color: cornflowerblue;
+}
+
 /* Footer */
 footer {
   height: var(--footer-height);

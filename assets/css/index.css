@@ -1,15 +1,5 @@
 @import "style.css";
 
-/* Navbar */
-.navbar {
-  font-size: var(--navbar-fs);
-}
-
-.container-fluid .navbar-brand:hover,
-.navbar-nav .nav-item .nav-link:hover {
-  color: cornflowerblue;
-}
-
 /* Welcome */
 .welcome {
   background-image: var(--background-image);
