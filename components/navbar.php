@@ -18,10 +18,10 @@
                       <a class="nav-link active fw-bold" href="./catalog.php">Catalogo</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link active fw-bold" href="#AboutUs">Chi Siamo</a>
+                      <a class="nav-link active fw-bold" href="./#AboutUs">Chi Siamo</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link active fw-bold" href="#Contacts">Contatti</a>
+                      <a class="nav-link active fw-bold" href="./#Contacts">Contatti</a>
                   </li>
               </ul>
               <?php include("../components/navbar-icon.php"); ?>
