@@ -13,89 +13,14 @@
 </head>
 
 <body>
+
+  <?php session_start(); ?>
+
   <?php include("./components/navbar.php"); ?>
 
-  <!-- Welcome -->
-  <div class="welcome d-flex justify-content-center flex-column">
-    <div class="text-center text-white mt-auto">
-      <h1 class="m-0">Bookverse</h1>
-      <span>La tua libreria virtuale</span>
-    </div>
-    <div class="text-center mt-auto">
-      <a class="btn btn-primary welcome-btn" href="./login.php">Accedi</a>
-      <a class="btn btn-info welcome-btn" href="./registration.php">
-        Registrati
-      </a>
-    </div>
-    <div class="text-center mt-auto mb-1">
-      <a href="#content">
-        <i class="fa-solid fa-chevron-down"></i>
-      </a>
-    </div>
-  </div>
-  <!--/ Welcome  -->
+  <?php include("./components/welcome.php"); ?>
 
-  <!-- Content -->
-  <div class="content bg-black" id="content">
-
-    <?php include("./components/services.php"); ?>
-
-    <!-- About Us -->
-    <div class="text-center text-white mx-5" id="AboutUs">
-      <h1 class="m-0">Chi siamo</h1>
-      <span>
-        Nato dall'idea di portare nel mondo virtuale le librerie, Bookverse è
-        il progetto pratico per Linguaggi e Tecnologie per il Web del corso di
-        laurea in Ingegneria Informatica e Automatica.
-      </span>
-
-      <div class="container row text-center my-5 mx-auto">
-        <span class="my-2"> Ideato e realizzato da: </span>
-        <div class="col my-2">
-          <div class="picture d-flex justify-content-center align-items-center mx-auto mb-2">
-            <h1 class="m-0">M</h1>
-          </div>
-          <span>Michael Mancini</span>
-          <br />
-          <span class="matricola">1884654</span>
-        </div>
-        <div class="col my-2">
-          <div class="picture picture d-flex justify-content-center align-items-center mx-auto mb-2">
-            <h1 class="m-0">L</h1>
-          </div>
-          <span>Lorenzo Gizzi</span>
-          <br />
-          <span class="matricola">1907374</span>
-        </div>
-      </div>
-    </div>
-    <!--/ About Us -->
-
-    <!-- Our Social -->
-    <div class="text-center text-white mx-5 pb-3" id="Contacts">
-      <h1 class="m-0">Contatti</h1>
-      <span>
-        Contattaci con un messaggio o una mail, oppure tramite i nostri
-        social!
-      </span>
-
-      <?php include("./components/comment-form.php"); ?>
-
-      <div class="container text-center mt-3">
-        <a class="navbar-brand mx-2" href="#Mail">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
-        <a class="navbar-brand mx-2" href="#Facebook">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a class="navbar-brand mx-2" href="#Twitter">
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-      </div>
-    </div>
-    <!--/ Our Social -->
-  </div>
-  <!--/ Content -->
+  <?php include("./components/index-content.php"); ?>
 
   <?php include("./components/footer.php"); ?>
 
