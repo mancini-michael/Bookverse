@@ -1,6 +1,11 @@
 <?php
 
-include("../php/welcome.php");
+session_start();
+
+if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
+    header("Location: ./index.php");
+    exit;
+}
 
 ?>
 
@@ -21,12 +26,17 @@ include("../php/welcome.php");
 
 <body>
 
-
+    <?php include("components/navbar.php"); ?>
 
     <?php
 
     session_start();
-    echo "<h1>" . $_SESSION["email"] . "</h1>"
+    echo "<h1>" . $_SESSION["nome"] . "</h1>";
+    echo "<h1>" . $_SESSION["cognome"] . "</h1>";
+    echo "<h1>" . $_SESSION["email"] . "</h1>";
+    echo "<h1>" . $_SESSION["indirizzo"] . "</h1>";
+    echo "<h1>" . $_SESSION["citta"] . "</h1>";
+    echo "<h1>" . $_SESSION["cap"] . "</h1>";
 
     ?>
 

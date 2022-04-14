@@ -17,10 +17,10 @@
     <?php include("components/navbar.php"); ?>
 
     <div class="catalog text-center text-white mx-auto pt-5">
-        <h1 class="m-0">Catalogo</h1>
-        <span>Sfoglia il catalogo per trovare il libro che cerchi!</span>
+        <h1 class="m-1">Catalogo</h1>
+        <span class="m-1">Sfoglia il catalogo per trovare il libro che cerchi!</span>
         <br />
-        <span>Non trovi quello che cerchi? Mandaci un <a href="#">messaggio</a> e lo troveremo per te!</span>
+        <span class="m-1">Non trovi quello che cerchi? Mandaci un <a href="#">messaggio</a> e lo troveremo per te!</span>
         <?php include("../php/render-catalog.php"); ?>
     </div>
 

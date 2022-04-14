@@ -24,7 +24,18 @@
                       <a class="nav-link active fw-bold" href="./#Contacts">Contatti</a>
                   </li>
               </ul>
-              <?php include("navbar-icon.php"); ?>
+              <?php
+
+                session_start();
+
+                if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
+                    include("navbar-login.php");
+                } else {
+                    include("navbar-logout.php");
+                }
+
+
+                ?>
           </div>
       </div>
   </nav>

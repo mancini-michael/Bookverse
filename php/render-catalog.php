@@ -17,8 +17,8 @@ for ($i = 0; $i < $arrLen; $i++) {
     $img = $libri[$i]['img'];
     $isbn = $libri[$i]['isbn'];
     echo "
-    <div class=\"col-3 mx-auto\">
-        <div class=\"container mx-auto my-3\">
+    <div class=\"col-md-3 mx-auto\">
+        <div class=\"container mxauto my-3\">
             <img src=\"" . $img . "\" alt=\"" . $nome . "\" class=\"img-fluid m-1\">
             <h5 class=\"m-1\">" . $nome . "</h5>
             <span class=\"m-1\">" . $autore . "</span>
