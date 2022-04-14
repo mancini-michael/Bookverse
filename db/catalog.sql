@@ -1,11 +1,11 @@
 CREATE TABLE books_catalogue (
-    titolo VARCHAR(40) not null,
-    autore VARCHAR(40) not null,
-    prezzo VARCHAR(10) not null,
-    data_rilascio VARCHAR(20) not null,
-    descrizione VARCHAR(1000000) not null,
-    isbn VARCHAR(13) not null,
-    img VARCHAR(10000) not null 
+    titolo VARCHAR(40) NOT NULL,
+    autore VARCHAR(40) NOT NULL,
+    prezzo VARCHAR(10) NOT NULL,
+    data_rilascio VARCHAR(20) NOT NULL,
+    descrizione VARCHAR(1000000) NOT NULL,
+    isbn VARCHAR(13) PRIMARY KEY,
+    img VARCHAR(10000) NOT NULL 
 );
 
 INSERT INTO books_catalogue VALUES ('Crime', 'Irvine Welsh', '18,05 €', '7 aprile 2022', 'Sotto la luce impietosa del sole della Florida, Irvine Welsh scandaglia le profondità più innominabili della crudeltà e del rimorso umano, con la sua penna sempre tagliente e anfetaminica.', '9788823530461', 'https://www.lafeltrinelli.it/images/9788823530461_0_536_0_75.jpg');

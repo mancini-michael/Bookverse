@@ -7,3 +7,9 @@ CREATE TABLE users (
     citta VARCHAR NOT NULL,
     cap NUMERIC NOT NULL
 );
+
+CREATE TABLE user_purchases (
+    email VARCHAR REFERENCES users(email),
+    isbn VARCHAR REFERENCES books_catalogue(isbn),
+    prezzo VARCHAR NOT NULL
+);

@@ -29,6 +29,10 @@ if ($password != $pass_dec) {
 }
 
 $_SESSION["loggedin"] = true;
-header("Location: ../views/index.php");
+$_SESSION["email"] = $email;
+
+
+
+header("Location: ../views/welcome.php");
 
 pg_close($connection);
