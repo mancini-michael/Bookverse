@@ -1,7 +1,7 @@
 <?php
 
 if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
-    include("../components/navbar-login.php");
+    include("../views/components/navbar-login.php");
 } else {
-    include("../components/navbar-logout.php");
+    include("../views/components/navbar-logout.php");
 }

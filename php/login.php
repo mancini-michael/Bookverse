@@ -4,8 +4,8 @@ session_start();
 require_once("config.php");
 
 $email = $_POST["inputEmail"];
-$query = 'SELECT * FROM users WHERE email=$1';
-$result = pg_query_params($connection, $query, array($email));
+$q = 'SELECT * FROM users WHERE email=$1';
+$result = pg_query_params($connection, $q, array($email));
 $tuple = pg_fetch_array($result, null, PGSQL_ASSOC);
 
 if (!$tuple) {
