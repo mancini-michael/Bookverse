@@ -3,6 +3,6 @@
 session_start();
 session_destroy();
 
-$_SESSION["loggedin"] = false;
+unset($_SESSION["loggedin"]);
 
 header("Location: ../views/index.php");

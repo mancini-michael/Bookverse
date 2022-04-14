@@ -13,11 +13,49 @@
 </head>
 
 <body>
-    <?php include("../components/navbar.php"); ?>
+    <?php include("components/navbar.php"); ?>
 
-    <?php include("../components/registration-form.php"); ?>
+    <!-- Registration Form -->
+    <div class="registration d-flex justify-content-center flex-column">
+        <div class="text-center text-white my-3">
+            <h1 class="m-0">Bookverse</h1>
+            <span>La tua libreria virtuale</span>
+        </div>
 
-    <?php include("../components/footer.php"); ?>
+        <?php
+
+        if (isset($_GET["send"])) {
+            echo "<div class=\"container alert alert-danger text-center\">
+                    Utente già registrato alla libreria.
+                  </div>";
+        }
+
+        ?>
+
+        <form action="../php/registration.php" class="form-check text-center" name="dati" onsubmit="return validateRegistration();" method="POST">
+            <div class="d-flex justify-content-center align-items-center flex-column">
+                <input type="text" class="col m-2" name="inputNome" placeholder="Nome" size="28" />
+                <input type="text" class="mb-2" name="inputCognome" placeholder="Cognome" size="28" />
+                <input type="email" class="mb-2" name="inputEmail" placeholder="Email" size="28" />
+                <input type="password" class="mb-2" name="inputPassword" placeholder="Password" size="28" />
+                <input type="text" class="mb-2" name="inputIndirizzo" placeholder="Indirizzo" size="28" />
+                <input type="text" class="mb-2" name="inputCitta" placeholder="Città" size="28" />
+                <input type="number" class="mb-2" name="CAP" placeholder="CAP" size="28" />
+                <div class="checkbox mb-2">
+                    <input type="checkbox" class="mx-2" id="inputCheck" name="inputCheck" />
+                    <label for="inputCheck">Acconsento all'invio dei miei dati</label>
+                </div>
+                <input type="submit" class="btn btn-primary mb-2" name="reg" value="Registrati" />
+                <span class="mb-2">
+                    Sei già un utente della libreria?
+                    <a href="../views/login.php">Accedi</a>
+                </span>
+            </div>
+        </form>
+    </div>
+    <!--/ Registration Form  -->
+
+    <?php include("components/footer.php"); ?>
 
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

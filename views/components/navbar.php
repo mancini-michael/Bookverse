@@ -24,7 +24,7 @@
                       <a class="nav-link active fw-bold" href="#Contacts">Contatti</a>
                   </li>
               </ul>
-              <?php include("../components/navbar-icon.php"); ?>
+              <?php include("navbar-icon.php"); ?>
           </div>
       </div>
   </nav>
