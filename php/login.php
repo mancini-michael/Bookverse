@@ -29,6 +29,6 @@ if ($password != $pass_dec) {
 }
 
 $_SESSION["loggedin"] = true;
-header("Location: ../views/welcome.php");
+header("Location: ../views/index.php");
 
 pg_close($connection);

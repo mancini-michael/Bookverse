@@ -19,6 +19,8 @@
     <div class="catalog text-center text-white mx-auto pt-5">
         <h1 class="m-0">Catalogo</h1>
         <span>Sfoglia il catalogo per trovare il libro che cerchi!</span>
+        <br />
+        <span>Non trovi quello che cerchi? Mandaci un <a href="#">messaggio</a> e lo troveremo per te!</span>
         <?php include("../php/render-catalog.php"); ?>
     </div>
 
