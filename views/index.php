@@ -122,23 +122,23 @@
       </span>
 
       <!-- Form -->
-      <div class="text-start bg-dark rounded-3 my-3 py-3" id="comment-form">
+      <div class="container-md text-start bg-dark rounded-3 my-3 py-3" id="comment-form">
 
         <?php
 
         if (isset($_GET["send"])) {
           $status_comment = $_GET["send"];
-          switch ($status_comment) {
-            case "inviato":
-              echo "<div class=\"container alert alert-success text-center\">
-                Messaggio inviato correttamente.
-              </div>";
-              break;
-            case "errore":
-              echo "<div class=\"container alert alert-danger text-center\">
-                Errore nell'invio.
-              </div>";
-              break;
+          if ($status_comment === "inviato") {
+            echo
+            "<div class=\"alert alert-success text-center\">
+              Messaggio inviato correttamente.
+            </div>";
+          }
+          if ($status_comment === "errore") {
+            echo
+            "<div class=\"alert alert-danger text-center\">
+              Errore nell'invio.
+            </div>";
           }
         }
 
