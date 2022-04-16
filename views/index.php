@@ -121,47 +121,27 @@
         social!
       </span>
 
-      <!-- Form -->
+      <!-- Comment Section -->
       <div class="container-md text-start bg-dark rounded-3 my-3 py-3" id="comment-form">
 
-        <?php
+        <div id="comment"></div>
 
-        if (isset($_GET["send"])) {
-          $status_comment = $_GET["send"];
-          if ($status_comment === "inviato") {
-            echo
-            "<div class=\"alert alert-success text-center\">
-              Messaggio inviato correttamente.
-            </div>";
-          }
-          if ($status_comment === "errore") {
-            echo
-            "<div class=\"alert alert-danger text-center\">
-              Errore nell'invio.
-            </div>";
-          }
-        }
-
-        ?>
-
-        <form action="../php/send-comment.php" method="post" class="m-3">
-          <div class="my-2">
-            <label for="email" class="form-label m-0">Indirizzo email</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Inserisci la tua mail..." required />
-          </div>
-          <div class="mb-2">
-            <label for="description" class="form-label m-0">
-              Descrizione
-            </label>
-            <br />
-            <textarea name="description" class="form-control" id="description" rows="10" placeholder="Aggiungi una descrizione..." required></textarea>
-          </div>
-          <div class="text-center pt-3">
-            <button type="submit" class="btn btn-primary">Invia</button>
-          </div>
-        </form>
+        <div class="my-2">
+          <label for="email" class="form-label m-0">Indirizzo email</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Inserisci la tua mail..." required />
+        </div>
+        <div class="mb-2">
+          <label for="description" class="form-label m-0">
+            Descrizione
+          </label>
+          <br />
+          <textarea name="description" class="form-control" id="description" rows="10" placeholder="Aggiungi una descrizione..." required></textarea>
+        </div>
+        <div class="text-center pt-3">
+          <button type="submit" class="btn btn-primary" id="comment-btn">Invia</button>
+        </div>
       </div>
-      <!--/ Form -->
+      <!--/ Comment Section -->
 
       <div class="container text-center mt-3">
         <a class="navbar-brand mx-2" href="#Mail">
