@@ -7,7 +7,7 @@ $q = "SELECT * FROM users WHERE email=$1";
 $result = pg_query_params($connection, $q, array($email));
 
 if ($tuple = pg_fetch_array($result, null, PGSQL_ASSOC)) {
-    header("Location: ../views/registration.php?send=esiste");
+    header("Location: ../registration.php?send=esiste");
     exit;
 }
 
@@ -28,6 +28,6 @@ if (!$result) {
     die("ERRORE: inserimento nel database non riuscito");
 }
 
-header("location: ../views/login.php");
+header("location: ../login.php");
 
 pg_close($connection);

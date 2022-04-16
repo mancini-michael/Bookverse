@@ -21,7 +21,7 @@
         <span class="m-1">Sfoglia il catalogo per trovare il libro che cerchi!</span>
         <br />
         <span class="m-1">Non trovi quello che cerchi? Mandaci un <a href="#">messaggio</a> e lo troveremo per te!</span>
-        <?php include("../php/render-catalog.php"); ?>
+        <?php include("php/render-catalog.php"); ?>
     </div>
 
     <?php include("components/footer.php"); ?>
@@ -39,7 +39,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- Index JavaScript -->
-    <script src="../assets/js/index.js"></script>
+    <script src="assets/js/index.js"></script>
 
 </body>
 

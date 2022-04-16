@@ -24,6 +24,7 @@
                       <a class="nav-link active fw-bold" href="./#Contacts">Contatti</a>
                   </li>
               </ul>
+
               <?php
 
                 session_start();
@@ -36,6 +37,7 @@
 
 
                 ?>
+
           </div>
       </div>
   </nav>

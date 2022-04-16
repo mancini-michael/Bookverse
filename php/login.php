@@ -11,7 +11,7 @@ $result = pg_query_params($connection, $q, array($email));
 $tuple = pg_fetch_array($result, null, PGSQL_ASSOC);
 
 if (!$tuple) {
-    header("Location: ../views/login.php?mail=wrong");
+    header("Location: ../login.php?mail=wrong");
     exit;
 }
 
@@ -33,7 +33,7 @@ $cap = $user_info[6];
 $pass_dec = openssl_decrypt($pass_enc_ok, $met_enc, $key_enc, 0, $iv);
 
 if ($password != $pass_dec) {
-    header("Location: ../views/login.php?passw=wrong");
+    header("Location: ../login.php?passw=wrong");
     exit;
 }
 
@@ -45,6 +45,6 @@ $_SESSION["indirizzo"] = $indirizzo;
 $_SESSION["citta"] = $citta;
 $_SESSION["cap"] = $cap;
 
-header("Location: ../views/welcome.php");
+header("Location: ../welcome.php");
 
 pg_close($connection);
