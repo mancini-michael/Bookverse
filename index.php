@@ -23,8 +23,8 @@
       <span>La tua libreria virtuale</span>
     </div>
     <div class="text-center mt-auto">
-      <a class="btn btn-primary welcome-btn" href="./login.php">Accedi</a>
-      <a class="btn btn-info welcome-btn" href="./registration.php">
+      <a class="btn btn-primary welcome-btn" href="login.php">Accedi</a>
+      <a class="btn btn-info welcome-btn" href="registration.php">
         Registrati
       </a>
     </div>
@@ -47,9 +47,9 @@
         continuo miglioramento.
         <br />
         Inizia effettuando la
-        <a class="link-info" href="./registration.php">registrazione</a> alla
+        <a class="link-info" href="registration.php">registrazione</a> alla
         libreria ed effettua l'
-        <a class="link-info" href="./login.php"> accesso </a>
+        <a class="link-info" href="login.php"> accesso </a>
         per iniziare ad acquistare i tuoi libri preferiti!
       </span>
     </div>
@@ -122,7 +122,7 @@
       </span>
 
       <!-- Comment Section -->
-      <div class="container-md text-start bg-dark rounded-3 my-3 py-3" id="comment-form">
+      <div class="container-md w-md-50 text-start bg-dark rounded-3 my-3 py-3" id="comment-form">
 
         <div id="comment"></div>
 
