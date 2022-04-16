@@ -127,15 +127,15 @@
         <div id="comment"></div>
 
         <div class="my-2">
-          <label for="email" class="form-label m-0">Indirizzo email</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="Inserisci la tua mail..." required />
+          <label for="text" class="form-label m-0">Titolo</label>
+          <input type="text" class="form-control" id="title" name="title" placeholder="Inserisci un titolo..." />
         </div>
         <div class="mb-2">
           <label for="description" class="form-label m-0">
             Descrizione
           </label>
           <br />
-          <textarea name="description" class="form-control" id="description" rows="10" placeholder="Aggiungi una descrizione..." required></textarea>
+          <textarea name="description" class="form-control" id="description" rows="10" placeholder="Aggiungi una descrizione..."></textarea>
         </div>
         <div class="text-center pt-3">
           <button type="submit" class="btn btn-primary" id="comment-btn">Invia</button>

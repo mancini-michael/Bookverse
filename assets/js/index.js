@@ -5,21 +5,21 @@ $(".navbar-collapse a").click(() => {
 
 /* Comment Section */
 $("#comment-btn").click(() => {
-  const email = $("#email").val();
+  const title = $("#title").val();
   const description = $("#description").val();
 
   /* Check if title or description are null and alert user */
-  if (!email || description === "") {
+  if (!title || description === "") {
     $("#comment")
       .addClass("text-center alert alert-danger")
-      .html("Aggiungi un'email e un commento!");
+      .html("Aggiungi un titolo e un commento!");
     return;
   }
 
   $.ajax({
     url: "../php/send-comment.php",
     type: "post",
-    data: { email, description },
+    data: { title, description },
     success: (result) => {
       if (!result) {
         $("#comment")

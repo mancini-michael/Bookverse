@@ -2,10 +2,10 @@
 
 require_once("config.php");
 
-$email = $_POST["email"];
+$title = $_POST["title"];
 $description = $_POST["description"];
 $q = "INSERT INTO comments VALUES ($1, $2)";
-$result = pg_query_params($connection, $q, array($email, $description));
+$result = pg_query_params($connection, $q, array($title, $description));
 
 echo $result;
 
