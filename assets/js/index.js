@@ -7,7 +7,7 @@ $(".navbar-collapse a").click(() => {
 $("#footer").html(`&copy; ${new Date().getFullYear()} - Bookverse`);
 
 /* Comment Section */
-$("#comment-form").on("submit", () => {
+$("#comment-form").on("submit", async (event) => {
   event.preventDefault();
 
   const title = $("#title").val();
