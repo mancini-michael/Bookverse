@@ -38,6 +38,7 @@
                 <input type="text" class="mb-2" name="inputCognome" placeholder="Cognome" size="28" />
                 <input type="email" class="mb-2" name="inputEmail" placeholder="Email" size="28" />
                 <input type="password" class="mb-2" name="inputPassword" placeholder="Password" size="28" />
+                <input type="password" class="mb-2" name="inputPassword2" placeholder="Password" size="28" />
                 <input type="text" class="mb-2" name="inputIndirizzo" placeholder="Indirizzo" size="28" />
                 <input type="text" class="mb-2" name="inputCitta" placeholder="Città" size="28" />
                 <input type="text" class="mb-2" name="CAP" placeholder="CAP" size="28" pattern="[0-9]{5}" />

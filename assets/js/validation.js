@@ -32,6 +32,12 @@ const validateRegistration = () => {
     alert("Per registrarti devi acconsentire all'invio dei dati");
     return false;
   }
+  if (
+    document.dati.inputPassword.value !== document.dati.inputPassword2.value
+  ) {
+    alert("Le due password non corrispondono");
+    return false;
+  }
   alert("Dati inseriti correttamente");
   return true;
 };
