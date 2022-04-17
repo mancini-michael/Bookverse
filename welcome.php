@@ -53,7 +53,7 @@ if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
     <!-- Jquery JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!-- Index JavaScript -->
+    <!-- Welcome JavaScript -->
     <script src="../assets/js/index.js"></script>
 </body>
 

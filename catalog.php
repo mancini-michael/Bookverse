@@ -38,7 +38,7 @@
     <!-- Jquery JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!-- Index JavaScript -->
+    <!-- Catalog JavaScript -->
     <script src="assets/js/index.js"></script>
 
 </body>

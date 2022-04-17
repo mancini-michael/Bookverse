@@ -67,7 +67,8 @@
     <!-- Jquery JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!-- Index JavaScript -->
+    <!-- Login JavaScript -->
+    <script src="assets/js/index.js"></script>
     <script src="assets/js/validation.js"></script>
 </body>
 

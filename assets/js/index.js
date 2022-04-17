@@ -1,7 +1,10 @@
-/* Navbar Listener */
+/* Navbar */
 $(".navbar-collapse a").click(() => {
   $(".navbar-collapse").collapse("hide");
 });
+
+/* Footer */
+$("#footer").html(`&copy; ${new Date().getFullYear()} - Bookverse`);
 
 /* Comment Section */
 $("#comment-btn").click(() => {
