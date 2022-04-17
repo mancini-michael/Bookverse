@@ -49,6 +49,28 @@ span a {
   font-size: var(--matricola-fs);
 }
 
+.catalog,
+.history,
+.contact {
+  height: var(--service-dimension);
+  width: var(--service-dimension);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.catalog {
+  background-image: var(--catalog);
+}
+
+.history {
+  background-image: var(--history);
+}
+
+.contact {
+  background-image: var(--contact);
+}
+
 @media screen and (max-width: 992px) {
   .welcome h1 {
     font-family: "Babylonica", cursive;
