@@ -7,13 +7,15 @@ $(".navbar-collapse a").click(() => {
 $("#footer").html(`&copy; ${new Date().getFullYear()} - Bookverse`);
 
 /* Comment Section */
-$("#comment-btn").click(() => {
+$("#comment-form").on("submit", () => {
+  event.preventDefault();
+
   const title = $("#title").val();
   const description = $("#description").val();
 
   /* Check if title or description are null and alert user */
   if (!title || description === "") {
-    $("#comment")
+    $("#messages")
       .addClass("text-center alert alert-danger")
       .html("Aggiungi un titolo e un commento!");
     return;
@@ -25,12 +27,12 @@ $("#comment-btn").click(() => {
     data: { title, description },
     success: (result) => {
       if (!result) {
-        $("#comment")
+        $("#messages")
           .removeClass("alert-success")
           .addClass("text-center alert alert-danger")
           .html("Errore nell'invio del commento.");
       } else {
-        $("#comment")
+        $("#messages")
           .removeClass("alert-danger")
           .addClass("text-center alert alert-success")
           .html("Commento inviato correttamente.");

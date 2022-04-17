@@ -122,24 +122,26 @@
       </span>
 
       <!-- Comment Section -->
-      <div class="container-md w-md-50 text-start bg-dark rounded-3 my-3 py-3" id="comment-form">
+      <div class="container-md w-md-50 text-start bg-dark rounded-3 my-3 py-3">
 
-        <div id="comment"></div>
+        <div id="messages"></div>
 
-        <div class="my-2">
-          <label for="text" class="form-label m-0">Titolo</label>
-          <input type="text" class="form-control" id="title" name="title" placeholder="Inserisci un titolo..." />
-        </div>
-        <div class="mb-2">
-          <label for="description" class="form-label m-0">
-            Descrizione
-          </label>
-          <br />
-          <textarea name="description" class="form-control" id="description" rows="10" placeholder="Aggiungi una descrizione..."></textarea>
-        </div>
-        <div class="text-center pt-3">
-          <button type="submit" class="btn btn-primary" id="comment-btn">Invia</button>
-        </div>
+        <form id="comment-form">
+          <div class="my-2">
+            <label for="text" class="form-label m-0">Titolo</label>
+            <input type="text" class="form-control" id="title" name="title" placeholder="Inserisci un titolo..." />
+          </div>
+          <div class="mb-2">
+            <label for="description" class="form-label m-0">
+              Descrizione
+            </label>
+            <br />
+            <textarea name="description" class="form-control" id="description" rows="10" placeholder="Aggiungi una descrizione..."></textarea>
+          </div>
+          <div class="text-center pt-3">
+            <button type="submit" class="btn btn-primary">Invia</button>
+          </div>
+        </form>
       </div>
       <!--/ Comment Section -->
 
