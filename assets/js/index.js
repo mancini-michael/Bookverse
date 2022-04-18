@@ -26,7 +26,8 @@ $("#comment-form").on("submit", async (event) => {
     type: "post",
     data: { title, description },
     success: (result) => {
-      if (!result) {
+      console.log(result);
+      if (!result || result === "") {
         $("#messages")
           .removeClass("alert-success")
           .addClass("text-center alert alert-danger")

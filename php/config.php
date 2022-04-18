@@ -10,5 +10,5 @@ $connection_string = "host=" . host . " port=" . port . " dbname=" . dbname . " 
 $connection = pg_connect($connection_string);
 
 if (!$connection) {
-    die("ERRORE: connessione al database non riuscita");
+    echo $connection;
 }

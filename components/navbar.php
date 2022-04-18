@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-md navbar-light fixed-top bg-body shadow rounded-3 m-2 p-2">
       <div class="container-fluid">
           <a class="navbar-brand text-start m-0" href=<?php session_start();
-                                                        if (!isset($_SESSION["loggedin"])) echo "./";
+                                                        if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) echo "./";
                                                         else echo "./welcome.php" ?>>
               <i class="fa-solid fa-person-booth"></i>
           </a>
@@ -13,7 +13,7 @@
               <ul class="navbar-nav text-center mx-2">
                   <li class="nav-item">
                       <a class="nav-link active fw-bold" aria-current="page" href=<?php session_start();
-                                                                                    if (!isset($_SESSION["loggedin"])) echo "./";
+                                                                                    if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) echo "./";
                                                                                     else echo "./welcome.php" ?>>
                           Home
                       </a>
@@ -22,10 +22,14 @@
                       <a class="nav-link active fw-bold" href="./catalog.php">Catalogo</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link active fw-bold" href="./#AboutUs">Chi Siamo</a>
+                      <a class="nav-link active fw-bold" href=<?php session_start();
+                                                                if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) echo "./#AboutUs";
+                                                                else echo "./welcome.php#AboutUs" ?>>Chi Siamo</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link active fw-bold" href="./#Contacts">Contatti</a>
+                      <a class="nav-link active fw-bold" href=<?php session_start();
+                                                                if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) echo "./#Contacts";
+                                                                else echo "./welcome.php#Contacts" ?>>Contatti</a>
                   </li>
               </ul>
 
