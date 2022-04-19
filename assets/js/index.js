@@ -26,7 +26,6 @@ $("#comment-form").on("submit", async (event) => {
     type: "post",
     data: { title, description },
     success: (result) => {
-      console.log(result);
       if (!result || result === "") {
         $("#messages")
           .removeClass("alert-success")
@@ -38,6 +37,23 @@ $("#comment-form").on("submit", async (event) => {
           .addClass("text-center alert alert-success")
           .html("Commento inviato correttamente.");
       }
+    },
+  });
+});
+
+/* Perform Checkout */
+$("#checkout").on("submit", async (event) => {
+  event.preventDefault();
+
+  const isbn = $("#isbn").html();
+  const price = $("#price").html();
+
+  $.ajax({
+    url: "../php/transaction.php",
+    type: "post",
+    data: { isbn, price },
+    success: (result) => {
+      alert("Transazione effettuata con successo");
     },
   });
 });

@@ -23,10 +23,18 @@
   .checkout {
     height: auto;
   }
+
+  .checkout-box img {
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 576px) {
   .checkout {
+    height: auto;
+  }
+
+  .checkout-box img {
     height: auto;
   }
 }

@@ -110,7 +110,7 @@
           <!--/ Comment Section -->
 
           <div class="container text-center mt-3">
-              <a class="navbar-brand mx-2" href="#Mail">
+              <a class="navbar-brand mx-2" href="mailto:info@bookverse.com">
                   <i class="fa-solid fa-envelope"></i>
               </a>
               <a class="navbar-brand mx-2" href="#Facebook">
