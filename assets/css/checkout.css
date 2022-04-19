@@ -10,3 +10,23 @@
 .checkout-box {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+.checkout-box img {
+  height: 650px;
+}
+
+.checkout-info {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 992px) {
+  .checkout {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .checkout {
+    height: auto;
+  }
+}
