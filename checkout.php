@@ -27,10 +27,7 @@ if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
     <?php include("components/navbar.php"); ?>
 
     <!-- Checkout -->
-
-    <?php $isbn = $_GET["isbn"];
-    echo $isbn; ?>
-
+    <?php include("components/checkout.php"); ?>
     <!--/ Checkout -->
 
     <?php include("components/footer.php"); ?>

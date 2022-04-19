@@ -25,6 +25,7 @@
   --welcome-btn-fs: 20px;
   --login-height: calc(100vh - var(--footer-height));
   --registration-height: calc(100vh - var(--footer-height));
+  --checkout-height: calc(100vh - var(--footer-height));
 }
 
 * {
