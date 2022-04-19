@@ -9,38 +9,22 @@ if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="it">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Homepage</title>
+    <title>Contatti</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../assets/css/welcome.css" />
+    <link rel="stylesheet" href="../assets/css/contacts.css" />
 </head>
 
 <body>
-
     <?php include("components/navbar.php"); ?>
-
-    <?php
-
-    session_start();
-    echo "<h1>" . $_SESSION["nome"] . "</h1>";
-    echo "<h1>" . $_SESSION["cognome"] . "</h1>";
-    echo "<h1>" . $_SESSION["email"] . "</h1>";
-    echo "<h1>" . $_SESSION["indirizzo"] . "</h1>";
-    echo "<h1>" . $_SESSION["citta"] . "</h1>";
-    echo "<h1>" . $_SESSION["cap"] . "</h1>";
-
-    ?>
-
-    <?php include("components/content.php"); ?>
 
     <?php include("components/footer.php"); ?>
 
@@ -55,7 +39,7 @@ if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
     <!-- Jquery JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!-- Welcome JavaScript -->
+    <!-- Contacts JavaScript -->
     <script src="../assets/js/index.js"></script>
 </body>
 

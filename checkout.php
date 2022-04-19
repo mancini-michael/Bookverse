@@ -3,44 +3,35 @@
 session_start();
 
 if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
-    header("Location: ./");
+    header("Location: ./login.php");
     exit;
 }
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="it">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Homepage</title>
+    <title>Checkout</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../assets/css/welcome.css" />
+    <link rel="stylesheet" href="../assets/css/checkout.css" />
 </head>
 
 <body>
-
     <?php include("components/navbar.php"); ?>
 
-    <?php
+    <!-- Checkout -->
 
-    session_start();
-    echo "<h1>" . $_SESSION["nome"] . "</h1>";
-    echo "<h1>" . $_SESSION["cognome"] . "</h1>";
-    echo "<h1>" . $_SESSION["email"] . "</h1>";
-    echo "<h1>" . $_SESSION["indirizzo"] . "</h1>";
-    echo "<h1>" . $_SESSION["citta"] . "</h1>";
-    echo "<h1>" . $_SESSION["cap"] . "</h1>";
+    <?php $isbn = $_GET["isbn"];
+    echo $isbn; ?>
 
-    ?>
-
-    <?php include("components/content.php"); ?>
+    <!--/ Checkout -->
 
     <?php include("components/footer.php"); ?>
 
@@ -55,7 +46,7 @@ if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
     <!-- Jquery JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!-- Welcome JavaScript -->
+    <!-- Checkout JavaScript -->
     <script src="../assets/js/index.js"></script>
 </body>
 
