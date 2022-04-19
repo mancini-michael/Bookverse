@@ -5,7 +5,7 @@ CREATE TABLE users (
     passw VARCHAR NOT NULL,
     indirizzo VARCHAR NOT NULL,
     citta VARCHAR NOT NULL,
-    cap NUMERIC NOT NULL
+    cap VARCHAR NOT NULL
 );
 
 CREATE TABLE user_purchases (
