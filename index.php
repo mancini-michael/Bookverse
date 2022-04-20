@@ -23,8 +23,8 @@
       <span>La tua libreria virtuale</span>
     </div>
     <div class="text-center mt-auto">
-      <a class="btn btn-primary welcome-btn" href="login.php">Accedi</a>
-      <a class="btn btn-info welcome-btn" href="registration.php">
+      <a class="btn btn-primary welcome-btn" href="./login.php">Accedi</a>
+      <a class="btn btn-info welcome-btn" href="./registration.php">
         Registrati
       </a>
     </div>

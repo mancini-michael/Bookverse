@@ -71,6 +71,43 @@ span a {
   background-image: var(--contact);
 }
 
+.user {
+  background-image: var(--background-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+}
+
+.user a {
+  font-size: var(--welcome-i-fs);
+  color: white;
+}
+
+.user a:hover {
+  color: cornflowerblue;
+}
+
+.user-icon {
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 200px;
+  height: 200px;
+}
+
+.user-icon h1 {
+  font-family: "Babylonica", cursive;
+  font-size: 100px;
+  text-transform: uppercase;
+}
+
+.user-info {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.user-info a {
+  font-size: var(--welcome-span-fs-sm);
+}
+
 @media screen and (max-width: 992px) {
   .welcome h1 {
     font-family: "Babylonica", cursive;
