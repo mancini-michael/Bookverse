@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../assets/css/catalog.css" />
+</head>
+<body>
 <?php
     require_once("config.php");
     if ($connection) {
@@ -28,13 +40,13 @@
                 $img = $libro[0]['img'];
                 echo "<h1>Titolo: $titolo</h1>" . "<br><img src=\"$img\" width=\"200\" height=\"300\" style=\"border:5px solid black\">" .
                     "<h1>prezzo: $prezzo</h1>" . "<br><hr /><br>";
-
             }
         }
-
+        echo "<div align=\"center\"><button type=\"button\" class=\"btn btn-primary\"><a href=\"../welcome.php\" style=\"text-decoration:none; color:white\">Torna Alla HomePage</a></button></div>";
         pg_close($connection);
     } else {
         echo "Internal Server Error";
     }
-
-?>
+    ?>
+</body>
+</html>
