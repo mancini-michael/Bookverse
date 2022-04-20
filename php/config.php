@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<< HEAD
-require_once ("environment.php");
-=======
 require_once("environment.php");
->>>>>>> 889d0133259385552248e4feaf83caf3b155a991
 
 define("host", "localhost");
 define("port", "5432");
