@@ -19,7 +19,16 @@
             for ($i = 0; $i < $arrLen; $i++) {
                 $isbn = $acquisti[$i]['isbn'];
                 $prezzo = $acquisti[$i]['prezzo'];
-                echo "<h1>isbn: </h1>" .  "$isbn" . " <h1>prezzo: </h1> " .  "$prezzo<hr />";
+                
+                $q2 = "SELECT * FROM books_catalogue WHERE isbn=$1";
+                $result2 = pg_query_params($connection, $q2, array($isbn));
+                $libro = pg_fetch_all($result2);
+
+                $titolo = $libro[0]['titolo'];
+                $img = $libro[0]['img'];
+                echo "<h1>Titolo: $titolo</h1>" . "<br><img src=\"$img\" width=\"200\" height=\"300\" style=\"border:5px solid black\">" .
+                    "<h1>prezzo: $prezzo</h1>" . "<br><hr /><br>";
+
             }
         }
 
