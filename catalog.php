@@ -20,7 +20,7 @@
         <h1 class="m-1">Catalogo</h1>
         <span class="m-1">Sfoglia il catalogo per trovare il libro che cerchi!</span>
         <br />
-        <span class="m-1">Non trovi quello che cerchi? Mandaci un <a href="./contacts.php">messaggio</a> e lo troveremo per te!</span>
+        <span class="m-1">Non trovi quello che cerchi? Mandaci un <a href="index.php#comment-form">messaggio</a> e lo troveremo per te!</span>
         <?php include("components/catalog-item.php"); ?>
     </div>
 
