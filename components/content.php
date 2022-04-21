@@ -32,7 +32,7 @@
                   <br />
                   <a href=<?php session_start();
                             if (!isset($_SESSION["loggedin"])) echo "./login.php";
-                            else echo "./history.php" ?> class="btn btn-primary my-2">Acquisti</a>
+                            else echo "php/acquisti.php" ?> class="btn btn-primary my-2">Acquisti</a>
               </div>
           </div>
           <div class="col mx-5 my-2">
