@@ -53,7 +53,7 @@ $("#checkout").on("submit", async (event) => {
     type: "post",
     data: { isbn, price },
     success: (result) => {
-      alert("Transazione effettuata con successo");
+      alert("Libro aggiunto correttamente al carrello");
     },
   });
 });

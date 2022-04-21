@@ -15,6 +15,7 @@
                 <span> <?php echo $_SESSION["cap"]; ?> </span>
             </div>
             <a href="./render-comments.php" class="btn btn-primary mt-5">I tuoi commenti</a>
+            <a href="./render-shopping-cart.php" class="btn btn-primary mt-5">Il tuo carrello</a>
         </div>
     </div>
     <div class="text-center mt-auto mb-1">

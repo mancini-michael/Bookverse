@@ -13,3 +13,9 @@ CREATE TABLE user_purchases (
     isbn VARCHAR REFERENCES books_catalogue(isbn),
     prezzo VARCHAR NOT NULL
 );
+
+CREATE TABLE user_shopping_cart (
+    email VARCHAR REFERENCES users(email),
+    isbn VARCHAR REFERENCES books_catalogue(isbn),
+    prezzo VARCHAR NOT NULL
+);

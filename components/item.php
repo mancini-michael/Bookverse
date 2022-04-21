@@ -11,7 +11,7 @@
             <br />
             <span class="card-text text-black bold">prezzo: <?php echo $prezzo; ?> </span>
             <br />
-            <a href="checkout.php?isbn=<?php echo $isbn; ?>" class="btn btn-info my-2">Acquista</a>
+            <a href="checkout.php?isbn=<?php echo $isbn; ?>" class="btn btn-info my-2">Aggiungi al carrello</a>
         </div>
     </div>
 </div>

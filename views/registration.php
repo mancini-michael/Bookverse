@@ -1,21 +1,3 @@
-<?php
-
-session_start();
-
-if (isset($_GET["acquisto"])) {
-    echo "<div class=\"container alert alert-success text-center\" style=\"margin-top:100px\">
-                Acquisto avvenuto con successo.
-            </div>";
-}
-
-if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
-    header("Location: ./");
-    exit;
-}
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="it">
 
@@ -23,24 +5,19 @@ if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Homepage</title>
+    <title>Registrazione</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../assets/css/welcome.css" />
+    <link rel="stylesheet" href="../assets/css/registration.css" />
 </head>
 
 <body>
+    <?php include("../components/navbar.php"); ?>
 
-    <?php include("components/navbar.php"); ?>
+    <?php include("../components/registration-form.php"); ?>
 
-    <?php include("components/user-info.php"); ?>
-
-    <?php include("components/content.php"); ?>
-
-    <?php include("components/footer.php"); ?>
-
-    <?php include("components/arrow.php"); ?>
+    <?php include("../components/footer.php"); ?>
 
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -51,8 +28,8 @@ if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
     <!-- Jquery JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!-- Welcome JavaScript -->
-    <script src="../assets/js/index.js"></script>
+    <!-- Index JavaScript -->
+    <script src="../assets/js/validation.js"></script>
 </body>
 
 </html>

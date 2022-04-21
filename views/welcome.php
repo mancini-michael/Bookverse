@@ -1,17 +1,6 @@
 <?php
 
-session_start();
-
-if (isset($_GET["acquisto"])) {
-    echo "<div class=\"container alert alert-success text-center\" style=\"margin-top:100px\">
-                Acquisto avvenuto con successo.
-            </div>";
-}
-
-if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
-    header("Location: ./");
-    exit;
-}
+include("../php/welcome.php");
 
 ?>
 
@@ -32,15 +21,17 @@ if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
 
 <body>
 
-    <?php include("components/navbar.php"); ?>
+    <?php include("../components/navbar.php"); ?>
 
-    <?php include("components/user-info.php"); ?>
+    <?php include("../components/welcome.php"); ?>
 
-    <?php include("components/content.php"); ?>
+    <div class="content bg-black">
+        <?php include("../components/about-us.php") ?>
+    </div>
 
-    <?php include("components/footer.php"); ?>
+    <?php include("../components/footer.php"); ?>
 
-    <?php include("components/arrow.php"); ?>
+    <?php include("../components/arrow.php"); ?>
 
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -51,7 +42,7 @@ if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
     <!-- Jquery JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!-- Welcome JavaScript -->
+    <!-- Index JavaScript -->
     <script src="../assets/js/index.js"></script>
 </body>
 

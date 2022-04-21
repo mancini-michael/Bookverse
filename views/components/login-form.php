@@ -1,0 +1,19 @@
+    <!-- Login Form -->
+    <div class="login d-flex justify-content-center flex-column">
+        <div class="text-center text-white my-3">
+            <h1 class="m-0">Bookverse</h1>
+            <span>La tua libreria virtuale</span>
+        </div>
+        <form action="./functions/login.php" class="form-check text-center" name="dati" onsubmit="return validateLogin();" method="POST">
+            <div class="d-flex justify-content-center align-items-center flex-column mb-auto">
+                <input type="email" name="inputEmail" placeholder="Email" size="28" />
+                <input type="password" class="my-2" name="inputPassword" placeholder="Password" size="28" />
+                <input type="submit" class="btn btn-primary mb-2" name="loginButton" value="Login" />
+                <span class="mb-2">
+                    Non sei registrato?
+                    <a href="../registration.php">Registrati</a>
+                </span>
+            </div>
+        </form>
+    </div>
+    <!--/ Login Form  -->
