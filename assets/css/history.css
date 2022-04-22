@@ -1,0 +1,18 @@
+@import "style.css";
+
+.history {
+  min-height: var(--history-height);
+  background-image: var(--background-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card {
+  width: 300px;
+  height: 100%;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
