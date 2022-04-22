@@ -14,5 +14,3 @@ $connection = pg_connect($connection_string);
 if (!$connection) {
     echo $connection;
 }
-
-?>

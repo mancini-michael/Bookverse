@@ -1,19 +1,4 @@
-<?php
-
-session_start();
-
-if (isset($_GET["acquisto"])) {
-    echo "<div class=\"container alert alert-success text-center\" style=\"margin-top:100px\">
-                Acquisto avvenuto con successo.
-            </div>";
-}
-
-if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
-    header("Location: ./");
-    exit;
-}
-
-?>
+<?php include("php/check-login.php"); ?>
 
 
 <!DOCTYPE html>
@@ -34,7 +19,12 @@ if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
 
     <?php include("components/navbar.php"); ?>
 
-    <?php include("components/history.php"); ?>
+    <div class="history d-flex justify-content-center align-items-center flex-column">
+        <div class="container row mx-auto">
+            <?php include("php/history.php"); ?>
+        </div>
+        <a href="./welcome.php" class="btn btn-primary mb-3">Torna alla homepage</a>
+    </div>
 
     <?php include("components/footer.php"); ?>
 

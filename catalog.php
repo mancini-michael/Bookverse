@@ -21,7 +21,9 @@
         <span class="m-1">Sfoglia il catalogo per trovare il libro che cerchi!</span>
         <br />
         <span class="m-1">Non trovi quello che cerchi? Mandaci un <a href="./contacts.php">messaggio</a> e lo troveremo per te!</span>
-        <?php include("components/catalog-item.php"); ?>
+        <div class="container row mx-auto">
+            <?php include("php/render-catalog.php"); ?>
+        </div>
     </div>
 
     <?php include("components/footer.php"); ?>
