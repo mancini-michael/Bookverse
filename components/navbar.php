@@ -31,6 +31,9 @@
                                                                 if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) echo "./#Contacts";
                                                                 else echo "./welcome.php#Contacts" ?>>Contatti</a>
                   </li>
+                  <li class="nav-item">
+                  <a class="nav-link active fw-bold" href="./shopping-cart.php"><i class="fa-solid fa-cart-shopping"></i></a>
+                  </li>
               </ul>
 
               <?php
