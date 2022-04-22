@@ -27,6 +27,7 @@
   --registration-height: calc(100vh - var(--footer-height));
   --checkout-height: calc(100vh - var(--footer-height));
   --history-height: calc(100vh - var(--footer-height));
+  --contacts-height: calc(100vh - var(--footer-height));
 }
 
 * {

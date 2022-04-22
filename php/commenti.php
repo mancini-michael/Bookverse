@@ -1,18 +1,23 @@
 <?php
-    require_once("config.php");
-    if ($connection) {
-        session_start();
-        $email = $_SESSION["email"];
-        
-        $nome_libro = $_POST["inputLibro"];
-        $descrizione = $_POST["inputDescrizione"];
-        $q = "INSERT INTO comments_users VALUES ($1, $2, $3)";
-        $result = pg_query_params($connection, $q, array($email, $nome_libro, $descrizione));
+require_once("config.php");
+if ($connection) {
+    session_start();
+    $email = $_SESSION["email"];
 
-        pg_close($connection);
+    $nome_libro = $_POST["title"];
+    $descrizione = $_POST["description"];
 
-        header("Location: ../welcome.php");
-    } else {
-        echo "Internal Server Error";
+    if (!$nome_libro || $descrizione === "") {
+        header("Location: ../contacts.php?send=wrong");
+        exit;
     }
-?>
+
+    $q = "INSERT INTO comments_users VALUES ($1, $2, $3)";
+    $result = pg_query_params($connection, $q, array($email, $nome_libro, $descrizione));
+
+    pg_close($connection);
+
+    header("Location: ../contacts.php");
+} else {
+    echo "Internal Server Error";
+}

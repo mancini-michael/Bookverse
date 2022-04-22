@@ -1,1 +1,13 @@
 @import "style.css";
+
+.contacts {
+  background-image: var(--background-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: var(--contacts-height);
+}
+
+.contacts h1 {
+  font-family: "Babylonica", cursive;
+  font-size: var(--content-h1-fs);
+}
