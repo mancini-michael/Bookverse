@@ -17,7 +17,7 @@ if ($connection) {
         $img = $libri[$i]['img'];
         $isbn = $libri[$i]['isbn'];
 
-        include("components/partials/item.php");
+        include("components/catalog-item.php");
     }
 
     pg_close($connection);

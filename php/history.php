@@ -23,7 +23,7 @@ if ($connection) {
 
             $titolo = $libro[0]['titolo'];
             $img = $libro[0]['img'];
-            include("components/partials/history-item.php");
+            include("components/history-item.php");
         }
     }
     pg_close($connection);

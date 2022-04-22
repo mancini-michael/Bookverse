@@ -26,7 +26,7 @@ if ($connection) {
     $isbn = $book_info[5];
     $img = $book_info[6];
 
-    include("components/partials/checkout-item.php");
+    include("components/checkout-item.php");
 
     pg_close($connection);
 } else {
