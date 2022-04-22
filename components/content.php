@@ -32,7 +32,7 @@
                   <br />
                   <a href=<?php session_start();
                             if (!isset($_SESSION["loggedin"])) echo "./login.php";
-                            else echo "php/acquisti.php" ?> class="btn btn-primary my-2">Acquisti</a>
+                            else echo "./history.php" ?> class="btn btn-primary my-2">Acquisti</a>
               </div>
           </div>
           <div class="col mx-5 my-2">
@@ -88,7 +88,7 @@
           <!-- Comment Section -->
           <div class="container-md w-md-50 text-start bg-dark rounded-3 my-3 py-3">
 
-              <div id="messages"></div>
+              <div class="w-50 mx-auto" id="messages"></div>
 
               <form id="comment-form">
                   <div class="my-2">

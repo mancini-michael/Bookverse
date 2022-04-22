@@ -1,5 +1,5 @@
 <?php
-    require_once("php/config.php");
+    require_once("config.php");
     if ($connection) {
         session_start();
         $email = $_SESSION["email"];
@@ -28,4 +28,3 @@
     } else {
         echo "Internal Server Error";
     }
-?>

@@ -26,9 +26,7 @@ if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
 <body>
     <?php include("components/navbar.php"); ?>
 
-    <!-- Checkout -->
     <?php include("components/checkout.php"); ?>
-    <!--/ Checkout -->
 
     <?php include("components/footer.php"); ?>
 
