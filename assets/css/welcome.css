@@ -75,7 +75,7 @@ span a {
   background-image: var(--background-image);
   background-size: cover;
   background-repeat: no-repeat;
-  height: auto;
+  min-height: 60vh;
 }
 
 .user a {

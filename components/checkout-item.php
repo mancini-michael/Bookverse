@@ -1,7 +1,7 @@
 <div class="container col-lg-5 text-center my-lg-auto mt-5 mx-2 py-5">
     <img src=<?php echo $img; ?> alt=<?php echo $title; ?> class=" img-fluid">
 </div>
-<div class="checkout-info container col-lg-6 text-white my-lg-auto my-3 mx-2 p-3">
+<div class="checkout-info container col-lg-6 rounded-3 text-white my-lg-auto my-3 mx-2 p-3">
     <form id="checkout">
         <div class="d-flex justify-content-center align-items-center flex-column">
             <span class="text-center" id="isbn"><?php echo $isbn; ?></span>
