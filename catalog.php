@@ -22,7 +22,7 @@
         <br />
         <span class="m-1">Non trovi quello che cerchi? Mandaci un <a href="./contacts.php">messaggio</a> e lo troveremo per te!</span>
         <div class="container row mx-auto">
-            <?php include("php/render-catalog.php"); ?>
+            <?php include("php/catalog.php"); ?>
         </div>
     </div>
 
