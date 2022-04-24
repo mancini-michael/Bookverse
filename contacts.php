@@ -40,7 +40,7 @@ if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
             ?>
 
             <h1 class="text-center m-0">Libri da aggiungere</h1>
-            <form action="php/commenti.php" method="post">
+            <form action="php/send-user-comment.php" method="post">
                 <div class="mb-2">
                     <label for="text" class="form-label m-0">Titolo</label>
                     <input type="text" class="form-control" id="title" name="title" placeholder="Inserisci un titolo..." />

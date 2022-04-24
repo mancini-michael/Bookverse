@@ -1,0 +1,12 @@
+@import "style.css";
+
+.comment {
+  background-image: var(--background-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: var(--comment-height);
+}
+
+.comment-item {
+  background-color: rgba(0, 0, 0, 0.7);
+}

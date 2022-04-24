@@ -5,7 +5,9 @@
             <h4 class="card-title text-black fs-5 m-0"> <?php echo $titolo; ?> </h4>
             <div class="d-flex justify-content-between align-items-center mt-3">
                 <span class="card-text text-black bold">prezzo: <?php echo $prezzo; ?> </span>
-                <span class="card-text text-center text-white rounded-3 count bold"> <?php echo $num_acquisti; ?> </span>
+                <div class="count text-center text-white rounded-3">
+                    <span> <?php echo $num_acquisti; ?> </span>
+                </div>
             </div>
         </div>
         <div class="text-center">
