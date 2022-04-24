@@ -29,6 +29,7 @@
   --history-height: calc(100vh - var(--footer-height));
   --contacts-height: calc(100vh - var(--footer-height));
   --comment-height: calc(100vh - var(--footer-height));
+  --cart-height: calc(100vh - var(--footer-height));
 }
 
 * {
