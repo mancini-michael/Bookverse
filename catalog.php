@@ -21,6 +21,12 @@
         <span class="m-1">Sfoglia il catalogo per trovare il libro che cerchi!</span>
         <br />
         <span class="m-1">Non trovi quello che cerchi? Mandaci un <a href="./contacts.php">messaggio</a> e lo troveremo per te!</span>
+        <br>
+        <form action="php/search.php" method="POST">
+            <input type="text" name="inputSearch">
+            <input type="submit" value="Cerca" class="btn btn-primary">
+        </form>
+        <br>
         <div class="container row mx-auto">
             <?php include("php/catalog.php"); ?>
         </div>
