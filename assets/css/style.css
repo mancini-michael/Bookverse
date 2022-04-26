@@ -23,13 +23,7 @@
   --arrow-margin: 20px;
   --time-animation: 0.5s;
   --welcome-btn-fs: 20px;
-  --login-height: calc(100vh - var(--footer-height));
-  --registration-height: calc(100vh - var(--footer-height));
-  --checkout-height: calc(100vh - var(--footer-height));
-  --history-height: calc(100vh - var(--footer-height));
-  --contacts-height: calc(100vh - var(--footer-height));
-  --comment-height: calc(100vh - var(--footer-height));
-  --cart-height: calc(100vh - var(--footer-height));
+  --min-height: calc(100vh - var(--footer-height));
 }
 
 * {

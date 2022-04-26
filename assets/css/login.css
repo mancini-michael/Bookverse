@@ -5,7 +5,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: var(--login-height);
+  min-height: var(--min-height);
 }
 
 .login h1 {
