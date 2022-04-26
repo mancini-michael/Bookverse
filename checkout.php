@@ -18,7 +18,7 @@
     <?php include("components/navbar.php"); ?>
 
     <div class="checkout">
-        <div class="checkout-box container-fluid row justify-content-around h-100 m-auto">
+        <div class="checkout-box container-fluid row justify-content-around m-auto">
             <?php include("php/checkout.php"); ?>
         </div>
     </div>

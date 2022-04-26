@@ -18,15 +18,14 @@
 
     <div class="catalog text-center text-white mx-auto pt-5">
         <h1 class="m-1">Catalogo</h1>
-        <span class="m-1">Sfoglia il catalogo per trovare il libro che cerchi!</span>
-        <br />
-        <span class="m-1">Non trovi quello che cerchi? Mandaci un <a href="./contacts.php">messaggio</a> e lo troveremo per te!</span>
-        <br>
-        <form action="php/search.php" method="POST">
-            <input type="text" name="inputSearch">
-            <input type="submit" value="Cerca" class="btn btn-primary">
-        </form>
-        <br>
+        <div class="d-flex justify-content-center align-items-center flex-column">
+            <span class="m-1">Sfoglia il catalogo per trovare il libro che cerchi!</span>
+            <form action="php/search.php" method="POST">
+                <input type="text" name="inputSearch">
+                <input type="submit" value="Cerca" class="btn btn-primary">
+            </form>
+            <span class="m-1">Non trovi quello che cerchi? Mandaci un <a href="./contacts.php">messaggio</a> e lo troveremo per te!</span>
+        </div>
         <div class="container row mx-auto">
             <?php include("php/catalog.php"); ?>
         </div>

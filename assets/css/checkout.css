@@ -9,6 +9,7 @@
 
 .checkout-box {
   background-color: rgba(0, 0, 0, 0.3);
+  min-height: var(--min-height);
 }
 
 .checkout-box img {

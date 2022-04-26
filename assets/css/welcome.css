@@ -108,6 +108,10 @@ span a {
   font-size: var(--welcome-span-fs-sm);
 }
 
+textarea {
+  resize: none;
+}
+
 @media screen and (max-width: 992px) {
   .welcome h1 {
     font-family: "Babylonica", cursive;

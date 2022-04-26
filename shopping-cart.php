@@ -22,10 +22,11 @@
             <div class="container row mx-auto my-auto">
                 <?php include("php/shopping-cart.php"); ?>
             </div>
-            <a href="./welcome.php" class="btn btn-primary mb-3">Torna alla homepage</a>
-        </div>
-        <div style="display:flex; justify-content:center; align-items:center">
-            <a href="php/cancella.php" class="btn btn-primary mb-3">Svuota il carrello</a>
+            <div class="d-flex justify-content-center align-items-center w-100 my-3">
+                <a href="php/buy.php" class="icon btn btn-success mx-3 p-3"><i class="fa-solid fa-credit-card"></i></a>
+                <a href="php/cancella.php" class="icon btn btn-danger mx-3 p-3"><i class="fa-solid fa-trash"></i></a>
+                <a href="./welcome.php" class="icon btn btn-primary mx-3 p-3"><i class="fa-solid fa-house"></i></a>
+            </div>
         </div>
     </div>
 
