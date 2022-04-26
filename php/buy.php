@@ -17,7 +17,7 @@ if ($connection) {
 
         for ($i = 0; $i < $arrLen; $i++) {
             $isbn = $acquisti[$i]['isbn'];
-            $prezzo = $acquisti[$i]['price'];
+            $prezzo = $acquisti[$i]['prezzo'];
 
             $q2 = "INSERT INTO user_purchases VALUES ($1,$2,$3)";
             $result2 = pg_query_params($connection, $q2, array($email, $isbn, $prezzo));
