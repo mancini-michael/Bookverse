@@ -17,11 +17,16 @@
 <body>
     <?php include("components/navbar.php"); ?>
 
-    <div class="shopping-cart d-flex justify-content-center align-items-center flex-column">
-        <div class="container row mx-auto my-auto">
-            <?php include("php/shopping-cart.php"); ?>
+    <div>
+        <div class="shopping-cart d-flex justify-content-center align-items-center flex-column">
+            <div class="container row mx-auto my-auto">
+                <?php include("php/shopping-cart.php"); ?>
+            </div>
+            <a href="./welcome.php" class="btn btn-primary mb-3">Torna alla homepage</a>
         </div>
-        <a href="./welcome.php" class="btn btn-primary mb-3">Torna alla homepage</a>
+        <div style="display:flex; justify-content:center; align-items:center">
+            <a href="php/cancella.php" class="btn btn-primary mb-3">Svuota il carrello</a>
+        </div>
     </div>
 
     <?php include("components/footer.php"); ?>
