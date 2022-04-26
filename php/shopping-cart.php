@@ -17,7 +17,7 @@
 
             for ($i = 0; $i < $arrLen; $i++) {
                 $isbn = $libri[$i]['isbn'];
-                $prezzo = $libri[$i]['prezzo'];
+                $prezzo = $libri[$i]['price'];
                 include("components/cart-item.php");
             }
         }
