@@ -5,7 +5,7 @@
             <h4 class="card-title text-black"> <?php echo $nome; ?> </h4>
             <h5 class="card-text text-black m-0"> <?php echo $autore; ?> </h5>
             <br />
-            <span class="card-text text-black"> <?php echo $data_rilascio; ?> </span>
+            <span class="card-text text-black"> <?php echo $data_pubblicazione; ?> </span>
             <br />
             <span class="card-text text-black">isbn: <?php echo $isbn; ?> </span>
             <br />

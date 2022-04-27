@@ -3,7 +3,7 @@
 require_once("config.php");
 
 if ($connection) {
-    $q = 'SELECT * FROM books_catalogue';
+    $q = 'SELECT * FROM catalogo';
     $result = pg_query_params($connection, $q, array());
     $libri = pg_fetch_all($result);
     $arrLen = count($libri);
@@ -12,10 +12,12 @@ if ($connection) {
         $nome = $libri[$i]['titolo'];
         $autore = $libri[$i]['autore'];
         $prezzo = $libri[$i]['prezzo'];
-        $data_rilascio = $libri[$i]['data_rilascio'];
+        $data_pubblicazione = $libri[$i]['data_pubblicazione'];
         $descrizione = $libri[$i]['descrizione'];
-        $img = $libri[$i]['img'];
+        $img = $libri[$i]['copertina'];
         $isbn = $libri[$i]['isbn'];
+
+        $data = date("d-m-Y", strtotime($data_pubblicazione));
 
         include("components/catalog-item.php");
     }

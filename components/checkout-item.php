@@ -10,7 +10,7 @@
             <h5> <?php echo $publicatedAt; ?> </h5>
             <span class="text-center"> <?php echo $description; ?> </span>
             <div class="d-flex justify-content-center align-items-center flex-lg-row flex-column m-2 p-2">
-                <span class="price mx-5" id="price"><?php echo $price; ?></span>
+                <span class="price mx-5" id="price"><?php echo $price; ?>€</span>
                 <button type="submit" class="btn btn-info mx-5 my-2">Aggiungi al carrello</button>
             </div>
         </div>

@@ -4,7 +4,7 @@ require_once("config.php");
 
 if ($connection) {
     $email = $_POST["inputEmail"];
-    $q = "SELECT * FROM users WHERE email=$1";
+    $q = "SELECT * FROM utente WHERE email=$1";
     $result = pg_query_params($connection, $q, array($email));
 
     if ($tuple = pg_fetch_array($result, null, PGSQL_ASSOC)) {
@@ -22,7 +22,7 @@ if ($connection) {
     $met_enc = 'aes256';
     $iv = 'mD1g7i9fD56_hf12';
     $pass_enc = openssl_encrypt($password, $met_enc, $key_enc, 0, $iv);
-    $q = 'INSERT INTO users VALUES ($1,$2,$3,$4,$5,$6,$7)';
+    $q = 'INSERT INTO utente VALUES ($1,$2,$3,$4,$5,$6,$7)';
     $result = pg_query_params($connection, $q, array($nome, $cognome, $email, $pass_enc, $indirizzo, $citta, $cap));
 
     if (!$result) {

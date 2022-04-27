@@ -1,13 +1,4 @@
-<?php
-
-session_start();
-
-if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
-    header("Location: ./login.php");
-    exit;
-}
-
-?>
+<?php include("php/check-login.php"); ?>
 
 <!DOCTYPE html>
 <html lang="it">

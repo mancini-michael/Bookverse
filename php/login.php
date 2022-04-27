@@ -8,7 +8,7 @@ if ($connection) {
     $email = $_POST["inputEmail"];
     $password = $_POST["inputPassword"];
 
-    $q = 'SELECT * FROM users WHERE email=$1';
+    $q = 'SELECT * FROM utente WHERE email=$1';
     $result = pg_query_params($connection, $q, array($email));
     $tuple = pg_fetch_array($result, null, PGSQL_ASSOC);
 
@@ -21,7 +21,7 @@ if ($connection) {
     $met_enc = 'aes256';
     $iv = 'mD1g7i9fD56_hf12';
 
-    $q = 'SELECT * FROM users WHERE email=$1';
+    $q = 'SELECT * FROM utente WHERE email=$1';
     $result_enc = pg_query_params($connection, $q, array($email));
     $user_info = pg_fetch_row($result_enc);
 

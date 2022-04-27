@@ -12,7 +12,7 @@ if ($connection) {
         exit;
     }
 
-    $q = "INSERT INTO comments_users VALUES ($1, $2, $3)";
+    $q = "INSERT INTO commenti_utente VALUES ($1, $2, $3)";
     $result = pg_query_params($connection, $q, array($email, $nome_libro, $descrizione));
 
     pg_close($connection);

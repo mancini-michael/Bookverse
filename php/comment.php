@@ -4,13 +4,13 @@ if ($connection) {
     session_start();
     $email = $_SESSION["email"];
 
-    $q = "SELECT * FROM comments_users WHERE email=$1";
+    $q = "SELECT * FROM commenti_utente WHERE email=$1";
     $result = pg_query_params($connection, $q, array($email));
 
     $commenti = pg_fetch_all($result);
 
     if (!$commenti) {
-        exit;
+        include("components/no-item.php");
     } else {
         $arrLen = count($commenti);
 

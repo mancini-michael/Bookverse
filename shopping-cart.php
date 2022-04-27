@@ -17,16 +17,14 @@
 <body>
     <?php include("components/navbar.php"); ?>
 
-    <div>
-        <div class="shopping-cart d-flex justify-content-center align-items-center flex-column">
-            <div class="container row mx-auto my-auto">
-                <?php include("php/shopping-cart.php"); ?>
-            </div>
-            <div class="d-flex justify-content-center align-items-center w-100 my-3">
-                <a href="php/buy.php" class="icon btn btn-success mx-3 p-3"><i class="fa-solid fa-credit-card"></i></a>
-                <a href="php/cancella.php" class="icon btn btn-danger mx-3 p-3"><i class="fa-solid fa-trash"></i></a>
-                <a href="./welcome.php" class="icon btn btn-primary mx-3 p-3"><i class="fa-solid fa-house"></i></a>
-            </div>
+    <div class="shopping-cart d-flex justify-content-center align-items-center flex-column">
+        <div class="container row mx-auto my-auto">
+            <?php include("php/shopping-cart.php"); ?>
+        </div>
+        <div class="d-flex justify-content-center align-items-center w-100 my-3">
+            <a href="php/buy.php" class="icon btn btn-success mx-3 p-3"><i class="fa-solid fa-credit-card"></i></a>
+            <a href="php/cancella.php" class="icon btn btn-danger mx-3 p-3"><i class="fa-solid fa-trash"></i></a>
+            <a href="./welcome.php" class="icon btn btn-primary mx-3 p-3"><i class="fa-solid fa-house"></i></a>
         </div>
     </div>
 

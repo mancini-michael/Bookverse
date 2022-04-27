@@ -20,6 +20,11 @@
     <div class="checkout">
         <div class="checkout-box container-fluid row justify-content-around m-auto">
             <?php include("php/checkout.php"); ?>
+            <div class="d-flex justify-content-center align-items-center w-100 mb-3">
+                <a href="./catalog.php" class="icon btn btn-primary mx-3 p-3"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="php/flash-buy.php?isbn=<?php echo $_GET["isbn"]; ?>" class="icon btn btn-success mx-3 p-3"><i class="fa-solid fa-credit-card"></i></a>
+                <a href="./shopping-cart.php" class="icon btn btn-secondary mx-3 p-3"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
         </div>
     </div>
 

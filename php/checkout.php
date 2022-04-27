@@ -5,7 +5,7 @@ require_once("config.php");
 if ($connection) {
 
     $isbn = $_GET["isbn"];
-    $q = 'SELECT * FROM books_catalogue WHERE isbn = $1';
+    $q = 'SELECT * FROM catalogo WHERE isbn = $1';
     $result = pg_query_params($connection, $q, array($isbn));
 
     $tuple = pg_fetch_array($result, null, PGSQL_ASSOC);

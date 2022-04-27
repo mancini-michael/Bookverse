@@ -116,11 +116,10 @@
     <!--/ About Us -->
 
     <!-- Our Social -->
-    <div class="text-center text-white mx-5 pb-3" id="Contacts">
-      <h1 class="m-0">Contatti</h1>
+    <div class="text-center text-white mx-5 pb-3">
+      <h1 class="m-0">La tua opinione è importante!</h1>
       <span>
-        Contattaci con un messaggio o una mail, oppure tramite i nostri
-        social!
+        Tramite un messaggio anonimo facci sapere come poter migliorare il servizio!
       </span>
 
       <!-- Comment Section -->

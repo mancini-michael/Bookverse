@@ -73,8 +73,7 @@
                 <div class="text-center my-2">
                     <span class="text-white">Visualizza i tuoi acquisti</span>
                     <br />
-                    <a href=<?php session_start();
-                            if (!isset($_SESSION["loggedin"])) echo "./login.php";
+                    <a href=<?php if (!isset($_SESSION["loggedin"])) echo "./login.php";
                             else echo "./history.php" ?> class="btn btn-primary my-2">Acquisti</a>
                 </div>
             </div>
@@ -122,10 +121,9 @@
 
         <!-- Our Social -->
         <div class="text-center text-white mx-5 pb-3" id="Contacts">
-            <h1 class="m-0">Contatti</h1>
+            <h1 class="m-0">La tua opinione è importante!</h1>
             <span>
-                Contattaci con un messaggio o una mail, oppure tramite i nostri
-                social!
+                Tramite un messaggio anonimo facci sapere come poter migliorare il servizio!
             </span>
 
             <!-- Comment Section -->
