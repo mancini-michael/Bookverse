@@ -33,7 +33,7 @@
                 $prezzo = $libri[$i]['prezzo'];
                 $data_pubblicazione = $libri[$i]['data_pubblicazione'];
                 $descrizione = $libri[$i]['descrizione'];
-                $img = $libri[$i]['img'];
+                $img = $libri[$i]['copertina'];
                 $isbn = $libri[$i]['isbn'];
 
                 include("../components/search-item.php");

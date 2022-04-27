@@ -23,8 +23,10 @@
         <div class="d-flex justify-content-center align-items-center flex-column">
             <span class="m-1">Sfoglia il catalogo per trovare il libro che cerchi!</span>
             <form action="php/search.php" method="POST">
-                <input type="text" name="inputSearch" placeholder="Inserisci il titolo da cercare" style="height:38px; width:500px; border:solid black; border-radius:25px; padding-left:10px">
-                <button style="border-radius:20px" type="submit" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input class="w-100 mx-3" type="text" name="inputSearch" placeholder="Cerca il libro..." style="height:38px; border:solid black; border-radius:25px; padding-left:10px">
+                    <button style="border-radius:100%" type="submit" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
             </form>
             <span class="m-1">Non trovi quello che cerchi? Mandaci un <a href="./contacts.php">messaggio</a> e lo troveremo per te!</span>
         </div>
