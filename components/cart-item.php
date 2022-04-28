@@ -12,7 +12,7 @@
             <span class="card-text text-black bold">prezzo: <?php echo $prezzo; ?>€</span>
             <br />
             <div class="d-flex justify-content-center m-3">
-                <a href="./php/buy-item.php?isbn=<?php echo $isbn; ?>" class="icon btn btn-success m-1 p-3"><i class="fa-solid fa-credit-card"></i></a>
+                <a href="./payment.php?isbn=<?php echo $isbn; ?>" class="icon btn btn-success m-1 p-3"><i class="fa-solid fa-credit-card"></i></a>
                 <a href="./php/delete-item.php?isbn=<?php echo $isbn; ?>" class="icon btn btn-danger m-1 p-3"><i class="fa-solid fa-trash"></i></a>
             </div>
         </div>
