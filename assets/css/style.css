@@ -48,6 +48,10 @@ html {
   color: cornflowerblue;
 }
 
+textarea {
+  resize: none;
+}
+
 /* Footer */
 footer {
   height: var(--footer-height);

@@ -18,7 +18,7 @@
     <?php include("components/navbar.php"); ?>
 
     <div class="shopping-cart d-flex justify-content-center align-items-center flex-column">
-        <div class="container row mx-auto my-auto">
+        <div class="container row m-auto py-5">
             <?php include("php/shopping-cart.php"); ?>
         </div>
         <div class="d-flex justify-content-center align-items-center w-100 my-3">

@@ -19,8 +19,8 @@
 
     <?php include("components/navbar.php"); ?>
 
-    <div class="history d-flex justify-content-center align-items-center flex-column">
-        <div class="container row mx-auto my-auto">
+    <div class="history d-flex justify-content-center align-items-center flex-column pt-5">
+        <div class="container row m-auto py-5">
             <?php include("php/history.php"); ?>
         </div>
         <a href="./welcome.php" class="btn btn-primary my-3">Torna alla homepage</a>

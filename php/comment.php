@@ -15,7 +15,7 @@ if ($connection) {
         $arrLen = count($commenti);
 
         for ($i = 0; $i < $arrLen; $i++) {
-            $nome_libro = $commenti[$i]['nome_libro'];
+            $nome_libro = $commenti[$i]['titolo'];
             $descrizione = $commenti[$i]['descrizione'];
             include("components/comment-item.php");
         }

@@ -9,7 +9,7 @@ if ($connection) {
     $acquisti = pg_fetch_all($result);
 
     if (!$acquisti) {
-        include("components/no-item.php");
+        header("Location: ../shopping-cart.php");
     } else {
         $arrLen = count($acquisti);
 
