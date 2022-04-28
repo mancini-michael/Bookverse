@@ -26,3 +26,4 @@ if ($connection) {
 } else {
     echo "Internal Server Error";
 }
+?>

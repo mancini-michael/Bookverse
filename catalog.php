@@ -33,7 +33,7 @@
         <div class="container row mx-auto">
             <?php include("php/catalog.php"); ?>
         </div>
-    </div>
+    </div>    
 
     <?php include("components/footer.php"); ?>
 
