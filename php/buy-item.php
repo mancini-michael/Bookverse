@@ -26,6 +26,21 @@ if ($connection) {
         $q3 = "DELETE FROM carrello_utente WHERE email=$1 AND isbn=$2";
         $result3 = pg_query_params($connection, $q3, array($email, $isbn));
 
+        $mail = new PHPMailer();
+        $mail->isSMTP();
+        $mail->Host = "smtp.gmail.com";
+        $mail->SMTPAuth = "true";
+        $mail->SMTPSecure = "tls";
+        $mail->Port = "587";
+        $mail->Username = "...";
+        $mail->Password = "...";
+        $mail->Subject = "Acquisto - Bookverse";
+        $mail->setFrom("...");
+        $mail->Body = "Il tuo acquisto è andato a buon fine";
+        $mail->addAddress ($email);
+        $mail->Send();
+        $mail->smtpClose();
+
         header("Location: ../welcome.php");
     }
     pg_close($connection);
