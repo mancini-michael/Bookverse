@@ -25,7 +25,6 @@
                 $autore = $libro['autore'];
                 $prezzo = $libro['prezzo'];
                 $data_pubblicazione = $libro['data_pubblicazione'];
-                $descrizione = $libro['descrizione'];
                 $img = $libro['copertina'];
                 $isbn = $libro['isbn'];
 
