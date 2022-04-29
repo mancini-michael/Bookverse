@@ -13,7 +13,7 @@ if ($connection) {
         $autore = $libri[$i]['autore'];
         $prezzo = $libri[$i]['prezzo'];
         $data_pubblicazione = $libri[$i]['data_pubblicazione'];
-        $descrizione = $libri[$i]['descrizione'];
+        $descrizione = $libri[$i]['trama'];
         $img = $libri[$i]['copertina'];
         $isbn = $libri[$i]['isbn'];
 
@@ -26,4 +26,3 @@ if ($connection) {
 } else {
     echo "Internal Server Error";
 }
-?>

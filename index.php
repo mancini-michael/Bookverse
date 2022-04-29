@@ -68,9 +68,7 @@
         <div class="text-center my-2">
           <span class="text-white">Visualizza i tuoi acquisti</span>
           <br />
-          <a href=<?php session_start();
-                  if (!isset($_SESSION["loggedin"])) echo "./login.php";
-                  else echo "./history.php" ?> class="btn btn-primary my-2">Acquisti</a>
+          <a href="./history.php" class="btn btn-primary my-2">Acquisti</a>
         </div>
       </div>
       <div class="col mx-5 my-2">
