@@ -53,6 +53,10 @@ $("#checkout").on("submit", async (event) => {
     type: "post",
     data: { isbn, price },
     success: (result) => {
+      if (!result) {
+        alert("Puoi aggiungere solo una copia del libro per acquisto!");
+        return;
+      }
       alert("Libro aggiunto correttamente al carrello");
     },
   });
