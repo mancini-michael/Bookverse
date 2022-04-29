@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Babylonica&family=Montserrat:ital,wght@0,400;1,300&display=swap");
+
+:root {
+  --navbar-fs: 15px;
+  --background-image: url("../img/background-1.jpg");
+  --background-height: 750px;
+  --welcome-h1-fs: 150px;
+  --welcome-span-fs: 20px;
+  --welcome-i-fs: 35px;
+  --welcome-h1-fs-sm: 100px;
+  --welcome-span-fs-sm: 15px;
+  --welcome-i-fs-sm: 20px;
+  --content-h1-fs: 60px;
+  --footer-fs: 10px;
+  --footer-height: 60px;
+  --matricola-fs: 12px;
+  --catalog: url("../img/catalog.jpg");
+  --history: url("../img/shopping-bag.jpg");
+  --contact: url("../img/contact.jpg");
+  --service-dimension: 250px;
+  --picture-dimension: 200px;
+  --arrow-dimension: 60px;
+  --arrow-margin: 20px;
+  --time-animation: 0.5s;
+  --welcome-btn-fs: 20px;
+  --min-height: calc(100vh - var(--footer-height));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body,
+html {
+  height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  font-size: var(--navbar-fs);
+}
+
+.container-fluid .navbar-brand:hover,
+.navbar-nav .nav-item .nav-link:hover {
+  color: cornflowerblue;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Footer */
+footer {
+  height: var(--footer-height);
+  font-size: var(--footer-fs);
+}
+
+/* Arrow */
+#arrow {
+  display: none;
+  position: fixed;
+  bottom: var(--arrow-margin);
+  right: var(--arrow-margin);
+  z-index: auto;
+}
+
+#arrow a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--arrow-dimension);
+  width: var(--arrow-dimension);
+  border-radius: 100%;
+  background-color: cornflowerblue;
+}
+
+.btnEntry {
+  animation-duration: var(--time-animation);
+  animation-fill-mode: both;
+  animation-name: btnEntry;
+}
+
+@keyframes btnEntry {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.btnExit {
+  animation-duration: var(--time-animation);
+  animation-fill-mode: both;
+  animation-name: btnExit;
+}
+
+@keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+}

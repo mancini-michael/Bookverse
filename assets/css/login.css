@@ -1,0 +1,44 @@
+@import "style.css";
+
+.login {
+  background-image: var(--background-image);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: var(--min-height);
+}
+
+.login h1 {
+  font-family: "Babylonica", cursive;
+  font-size: var(--welcome-h1-fs);
+}
+
+.login span {
+  color: white;
+}
+
+span a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+  .login h1 {
+    font-family: "Babylonica", cursive;
+    font-size: var(--welcome-h1-fs-sm);
+  }
+
+  .login span {
+    font-size: var(--welcome-span-fs-sm);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .login h1 {
+    font-family: "Babylonica", cursive;
+    font-size: var(--welcome-h1-fs-sm);
+  }
+
+  .login span {
+    font-size: var(--welcome-span-fs-sm);
+  }
+}

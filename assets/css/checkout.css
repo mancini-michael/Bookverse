@@ -1,0 +1,41 @@
+@import "style.css";
+
+.checkout {
+  background-image: var(--background-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: var(--min-height);
+}
+
+.checkout-box {
+  background-color: rgba(0, 0, 0, 0.3);
+  min-height: var(--min-height);
+}
+
+.checkout-box img {
+  height: 650px;
+}
+
+.checkout-info {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 992px) {
+  .checkout {
+    height: auto;
+  }
+
+  .checkout-box img {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .checkout {
+    height: auto;
+  }
+
+  .checkout-box img {
+    height: auto;
+  }
+}
