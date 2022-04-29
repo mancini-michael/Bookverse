@@ -4,7 +4,7 @@
     if ($connection) {
         $email = $_SESSION["email"];
 
-        $q = "SELECT DISTINCT * FROM carrello_utente WHERE email=$1";
+        $q = "SELECT * FROM carrello_utente WHERE email=$1";
         $result = pg_query_params($connection, $q, array($email));
 
         $libri = pg_fetch_all($result);
