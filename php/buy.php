@@ -37,10 +37,10 @@ if ($connection) {
         $mail->SMTPAuth = "true";
         $mail->SMTPSecure = "tls";
         $mail->Port = "587";
-        $mail->Username = "...";
-        $mail->Password = "...";
+        $mail->Username = email;
+        $mail->Password = email_psw;
         $mail->Subject = "Acquisto - Bookverse";
-        $mail->setFrom("...");
+        $mail->setFrom(email);
         $mail->Body = "Il tuo acquisto è andato a buon fine";
         $mail->addAddress ($email);
         $mail->Send();
