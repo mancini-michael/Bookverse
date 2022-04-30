@@ -1,5 +1,13 @@
 <?php
 require_once("config.php");
+require '../includes/PHPMailer.php';
+require '../includes/SMTP.php';
+require '../includes/Exception.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
 if ($connection) {
     session_start();
     $email = $_SESSION["email"];
