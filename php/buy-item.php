@@ -39,15 +39,16 @@ if ($connection) {
         $mail->Host = "smtp.gmail.com";
         $mail->SMTPAuth = "true";
         $mail->SMTPSecure = "tls";
+        $mail->SMTPKeepAlive = true;
         $mail->Port = "587";
         $mail->Username = email;
         $mail->Password = email_psw;
         $mail->Subject = "Acquisto - Bookverse";
         $mail->setFrom(email);
-        $mail->Body = "Il tuo acquisto è andato a buon fine";
+        $mail->Body = "Il tuo acquisto e' andato a buon fine";
         $mail->addAddress ($email);
         $mail->Send();
-        $mail->smtpClose();
+        //$mail->smtpClose();
 
         header("Location: ../welcome.php");
     }
