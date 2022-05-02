@@ -20,11 +20,22 @@
     <?php include("components/navbar.php"); ?>
 
     <div class="container-fluid user row justify-content-around m-auto pt-5">
+
+    <?php
+        if (isset($_GET["changePassword"])) {
+            echo "<div class=\"container alert alert-success text-center mt-5\">
+                    Password modificata con successo
+                  </div>";
+        }
+
+    ?>  
+
         <div class="col-lg-3 my-lg-auto mt-5">
             <div class="user-icon d-flex justify-content-center align-items-center mx-auto">
                 <h1 class="m-0"><?php echo $_SESSION["nome"][0]; ?></h1>
             </div>
         </div>
+
         <div class="col-lg-6 text-center text-white my-auto">
             <div class="user-info rounded-3 m-5 p-3">
                 <div class="d-flex justify-content-center align-items-center flex-column h-100 mt-3">
@@ -38,6 +49,7 @@
                 </div>
                 <a href="./comments.php" class="btn btn-primary mt-3 mx-1">I tuoi commenti</a>
                 <a href="./shopping-cart.php" class="btn btn-primary mt-3 mx-1">Il tuo carrello</a>
+                <a href="./change-psw.php" class="btn btn-primary mt-3 mx-1">Cambia password</a>
             </div>
         </div>
         <div class="text-center mt-auto mb-1">
