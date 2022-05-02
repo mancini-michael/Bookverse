@@ -47,7 +47,7 @@ if ($connection) {
         $mail->Send();
         //$mail->smtpClose();
 
-    header("Location: ../welcome.php");
+        header("Location: ../welcome.php?acquisto=wrong");
     }
     pg_close($connection);
 } else {
