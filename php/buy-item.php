@@ -45,7 +45,7 @@ if ($connection) {
         $mail->Password = email_psw;
         $mail->Subject = "Acquisto - Bookverse";
         $mail->setFrom(email);
-        $mail->Body = "Il tuo acquisto e' andato a buon fine";
+        $mail->Body = "Il tuo acquisto e' andato a buon fine. Accedi al Bookverse per controllare la sezione Acquisti";
         $mail->addAddress ($email);
         $mail->Send();
         //$mail->smtpClose();
