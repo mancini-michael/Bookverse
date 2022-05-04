@@ -17,7 +17,7 @@ if ($connection) {
 
     pg_close($connection);
 
-    header("Location: ../contacts.php");
+    header("Location: ../welcome.php?comments=wrong");
 } else {
     echo "Internal Server Error";
 }

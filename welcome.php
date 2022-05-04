@@ -39,6 +39,15 @@
 
     ?>  
 
+    <?php
+        if (isset($_GET["comments"])) {
+            echo "<div class=\"container alert alert-success text-center mt-5\">
+                    Commento inserito correttamente
+                  </div>";
+        }
+
+    ?>  
+
         <div class="col-lg-3 my-lg-auto mt-5">
             <div class="user-icon d-flex justify-content-center align-items-center mx-auto">
                 <h1 class="m-0"><?php echo $_SESSION["nome"][0]; ?></h1>
