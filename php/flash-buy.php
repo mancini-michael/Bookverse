@@ -18,7 +18,7 @@ if ($connection) {
         $q = "INSERT INTO acquisti_utente VALUES ($1,$2,$3)";
         $result = pg_query_params($connection, $q, array($email, $isbn, $prezzo));
 
-        header("Location: ../welcome.php");
+        header("Location: ../welcome.php?acquisto=wrong");
     }
     pg_close($connection);
 } else {
