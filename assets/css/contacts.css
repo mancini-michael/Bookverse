@@ -11,3 +11,15 @@
   font-family: "Babylonica", cursive;
   font-size: var(--content-h1-fs);
 }
+
+@media screen and (max-width: 576px) {
+  .contacts h1 {
+    font-family: "Babylonica", cursive;
+    font-size: 30px;
+  }
+
+  .contacts input::placeholder,
+  .contacts textarea::placeholder {
+    font-size: 10px;
+  }
+}

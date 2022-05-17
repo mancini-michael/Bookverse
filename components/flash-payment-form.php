@@ -1,5 +1,5 @@
-<form action="./php/flash-buy.php?isbn=<?php echo $_GET["isbn"]; ?>" method="post">
-    <div class="container text-center">
+<form action="./php/flash-buy.php?isbn=<?php echo $_GET["isbn"]; ?>" method="post" class="w-75">
+    <div class="container text-center w-md-100 w-50">
         <div class="input-group flex-nowrap my-3">
             <span class="input-group-text" id="addon-wrapping">TITOLARE</span>
             <input type="text" class="form-control" aria-label="Username" aria-describedby="addon-wrapping" required>

@@ -18,7 +18,9 @@
   --history: url("../img/shopping-bag.jpg");
   --contact: url("../img/contact.jpg");
   --service-dimension: 250px;
+  --service-dimension-sm: 150px;
   --picture-dimension: 200px;
+  --picture-dimension-sm: 100px;
   --arrow-dimension: 60px;
   --arrow-margin: 20px;
   --time-animation: 0.5s;

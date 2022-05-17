@@ -132,4 +132,20 @@ textarea {
   .welcome span {
     font-size: var(--welcome-span-fs-sm);
   }
+
+  .picture {
+    height: var(--picture-dimension-sm);
+    width: var(--picture-dimension-sm);
+  }
+
+  .catalog,
+  .history,
+  .contact {
+    height: var(--service-dimension-sm);
+    width: var(--service-dimension-sm);
+  }
+
+  .user span {
+    font-size: 12.5px;
+  }
 }
