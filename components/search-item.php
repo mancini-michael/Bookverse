@@ -1,10 +1,9 @@
-<div class="col my-3">
+<div class="col-md mt-5">
     <div class="card mx-auto">
         <img src=<?php echo $img; ?> class="img-fluid" alt=<?php echo $nome; ?>>
         <div class="card-body">
             <h4 class="card-title text-black"> <?php echo $nome; ?> </h4>
             <h5 class="card-text text-black m-0"> <?php echo $autore; ?> </h5>
-            <br />
             <span class="card-text text-black"> <?php echo $data; ?> </span>
             <br />
             <span class="card-text text-black">isbn: <?php echo $isbn; ?> </span>

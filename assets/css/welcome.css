@@ -131,6 +131,16 @@ textarea {
     font-family: "Babylonica", cursive;
     font-size: var(--welcome-h1-fs-sm);
   }
+
+  .picture {
+    height: var(--picture-dimension-sm);
+    width: var(--picture-dimension-sm);
+  }
+
+  .user-icon {
+    height: var(--picture-dimension-sm);
+    width: var(--picture-dimension-sm);
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -162,5 +172,10 @@ textarea {
 
   .user span {
     font-size: 12.5px;
+  }
+
+  .user-icon {
+    height: var(--picture-dimension-sm);
+    width: var(--picture-dimension-sm);
   }
 }

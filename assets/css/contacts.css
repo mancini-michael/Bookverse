@@ -17,9 +17,4 @@
     font-family: "Babylonica", cursive;
     font-size: 30px;
   }
-
-  .contacts input::placeholder,
-  .contacts textarea::placeholder {
-    font-size: 10px;
-  }
 }

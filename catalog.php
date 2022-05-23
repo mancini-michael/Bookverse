@@ -19,12 +19,12 @@
     <?php include("components/navbar.php"); ?>
 
     <div class="catalog text-center text-white mx-auto pt-5">
-        <h1 class="m-1">Catalogo</h1>
+        <h1 class="m-1 mt-4">Catalogo</h1>
         <div class="d-flex justify-content-center align-items-center flex-column">
             <span class="m-1">Sfoglia il catalogo per trovare il libro che cerchi!</span>
             <form action="php/search.php" method="POST">
                 <div class="d-flex justify-content-center align-items-center">
-                    <input class="w-100 mx-3" type="text" name="inputSearch" placeholder="Cerca il libro..." style="height:38px; border:solid black; border-radius:25px; padding-left:10px">
+                    <input class="border rounded w-100 mx-3" type="text" name="inputSearch" placeholder="Cerca il libro...">
                     <button style="border-radius:100%" type="submit" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </form>

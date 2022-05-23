@@ -92,14 +92,14 @@
             </span>
             <div class="container-md row text-center mt-3 mb-3 mx-auto">
                 <div class="col-md mt-md-5 mb-3 h-100">
-                    <div class="picture d-flex justify-content-center align-items-center mx-auto mb-2 w-25 h-100">
+                    <div class="picture d-flex justify-content-center align-items-center mx-auto mb-2">
                         <h1 class="m-0">M</h1>
                     </div>
                     <span>Michael Mancini</span>
                     <span class="matricola">1884654</span>
                 </div>
                 <div class="col-md mt-md-5 mb-3 h-100">
-                    <div class="picture d-flex justify-content-center align-items-center mx-auto mb-2 w-25 h-100">
+                    <div class="picture d-flex justify-content-center align-items-center mx-auto mb-2">
                         <h1 class="m-0">L</h1>
                     </div>
                     <span>Lorenzo Gizzi</span>

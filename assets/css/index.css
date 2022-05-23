@@ -98,6 +98,11 @@ textarea {
   .welcome span {
     font-size: var(--welcome-span-fs-sm);
   }
+
+  .picture {
+    height: var(--picture-dimension-sm);
+    width: var(--picture-dimension-sm);
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -108,5 +113,10 @@ textarea {
 
   .welcome span {
     font-size: var(--welcome-span-fs-sm);
+  }
+
+  .picture {
+    height: var(--picture-dimension-sm);
+    width: var(--picture-dimension-sm);
   }
 }

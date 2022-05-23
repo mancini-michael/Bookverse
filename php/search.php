@@ -18,55 +18,53 @@
 
     <?php include("../components/navbar.php"); ?>
 
-    <br>
-    <br>
+    <div class="catalog text-center text-white mx-auto">
+        <div class="d-flex justify-content-center align-items-center flex-column pt-5">
+            <div class="container-md row mx-auto">
+                <?php
+                    require_once("config.php");
 
-    <div class="catalog text-center text-white mx-auto pt-5">
-        <div class="container row mx-auto">
-<?php
-    require_once("config.php");
+                    if ($connection) {
+                        $libro = $_POST["inputSearch"];
 
-    if ($connection) {
-        $libro = $_POST["inputSearch"];
+                        $q = 'SELECT * FROM catalogo WHERE titolo~*$1';
+                        $result = pg_query_params($connection, $q, array($libro));
+                        $libri = pg_fetch_all($result);
 
-        $q = 'SELECT * FROM catalogo WHERE titolo~*$1';
-        $result = pg_query_params($connection, $q, array($libro));
-        $libri = pg_fetch_all($result);
+                        if ($libri == null) {
+                            echo "Nulla";
+                        } else {
 
-        if ($libri == null) {
-            echo "Nulla";
-        } else {
+                            $arrLen = count($libri);
 
-            $arrLen = count($libri);
+                            for ($i = 0; $i < $arrLen; $i++) {
+                                $nome = $libri[$i]['titolo'];
+                                $autore = $libri[$i]['autore'];
+                                $prezzo = $libri[$i]['prezzo'];
+                                $data_pubblicazione = $libri[$i]['data_pubblicazione'];
+                                $descrizione = $libri[$i]['descrizione'];
+                                $img = $libri[$i]['copertina'];
+                                $isbn = $libri[$i]['isbn'];
 
-            for ($i = 0; $i < $arrLen; $i++) {
-                $nome = $libri[$i]['titolo'];
-                $autore = $libri[$i]['autore'];
-                $prezzo = $libri[$i]['prezzo'];
-                $data_pubblicazione = $libri[$i]['data_pubblicazione'];
-                $descrizione = $libri[$i]['descrizione'];
-                $img = $libri[$i]['copertina'];
-                $isbn = $libri[$i]['isbn'];
+                                $data = date("d-m-Y", strtotime($data_pubblicazione));
 
-                $data = date("d-m-Y", strtotime($data_pubblicazione));
+                                include("../components/search-item.php");
+                            }
+                        }
 
-                include("../components/search-item.php");
-            }
-        }
-
-        pg_close($connection);
-    } else {
-        echo "Internal Server Error";
-    }
-?>
+                        pg_close($connection);
+                    } else {
+                        echo "Internal Server Error";
+                    }
+                ?>
+            </div>
+            <form action="../catalog.php" class="mt-5">
+                <button type="submit" class="btn btn-primary">
+                    Torna al catalogo
+                </button>  
+            </form>
+        </div>
     </div>
-    <br>
-    <form action="../catalog.php">
-        <button type="submit" class="btn btn-primary">
-            Torna al catalogo
-        </button>  
-    </form>
-    </div>    
 
     <?php include("../components/footer.php"); ?>
 
