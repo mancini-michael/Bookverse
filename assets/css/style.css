@@ -4,20 +4,20 @@
   --navbar-fs: 15px;
   --background-image: url("../img/background-1.jpg");
   --background-height: 750px;
-  --welcome-h1-fs: 150px;
+  --welcome-h1-fs: 80px;
   --welcome-span-fs: 20px;
   --welcome-i-fs: 35px;
-  --welcome-h1-fs-sm: 100px;
+  --welcome-h1-fs-sm: 40px;
   --welcome-span-fs-sm: 15px;
   --welcome-i-fs-sm: 20px;
-  --content-h1-fs: 60px;
+  --content-h1-fs: 40px;
   --footer-fs: 10px;
   --footer-height: 60px;
   --matricola-fs: 12px;
   --catalog: url("../img/catalog.jpg");
   --history: url("../img/shopping-bag.jpg");
   --contact: url("../img/contact.jpg");
-  --service-dimension: 250px;
+  --service-dimension: 200px;
   --service-dimension-sm: 150px;
   --picture-dimension: 200px;
   --picture-dimension-sm: 100px;
@@ -37,7 +37,7 @@
 
 body,
 html {
-  height: 100vh;
+  height: auto;
 }
 
 /* Navbar */

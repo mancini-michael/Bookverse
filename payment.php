@@ -15,6 +15,8 @@
 </head>
 
 <body>
+    <?php include("components/navbar.php"); ?>
+
     <div class="shopping-cart d-flex justify-content-center align-items-center flex-column">
         <?php include("php/payment.php"); ?>
     </div>

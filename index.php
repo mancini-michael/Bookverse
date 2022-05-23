@@ -19,7 +19,7 @@
   <!-- Welcome -->
   <div class="welcome d-flex justify-content-center flex-column">
     <div class="text-center text-white mt-auto">
-      <h1 class="m-0">Bookverse</h1>
+      <h1 class="m-0 w-100">Bookverse</h1>
       <span>La tua libreria virtuale</span>
     </div>
     <div class="text-center mt-auto">
@@ -55,24 +55,24 @@
     </div>
 
     <div class="row m-0">
-      <div class="col text-center mx-5 my-2">
-        <div class="catalog mx-auto"></div>
+      <div class="col-md text-center mx-md-5 mx-auto my-2">
+        <div class="catalog mx-auto w-50"></div>
         <div class="text-center my-2">
           <span class="text-white">Sfoglia il catalogo</span>
           <br />
           <a href="./catalog.php" class="btn btn-primary my-2">Catalogo</a>
         </div>
       </div>
-      <div class="col mx-5 my-2">
-        <div class="history mx-auto"></div>
+      <div class="col-md text-center mx-md-5 mx-auto my-2">
+        <div class="history mx-auto w-50"></div>
         <div class="text-center my-2">
           <span class="text-white">Visualizza i tuoi acquisti</span>
           <br />
           <a href="./history.php" class="btn btn-primary my-2">Acquisti</a>
         </div>
       </div>
-      <div class="col mx-5 my-2">
-        <div class="contact mx-auto"></div>
+      <div class="col-md text-center mx-md-5 mx-auto my-2">
+        <div class="contact mx-auto w-50"></div>
         <div class="text-center my-2">
           <span class="text-white">Non trovi quello che cerchi?</span>
           <br />
@@ -82,40 +82,36 @@
     </div>
     <!--/ Our Service  -->
 
-    <!-- About Us -->
-    <div class="text-center text-white mx-5" id="AboutUs">
-      <h1 class="m-0">Chi siamo</h1>
-      <span>
-        Nato dall'idea di portare nel mondo virtuale le librerie, Bookverse è
-        il progetto pratico per Linguaggi e Tecnologie per il Web del corso di
-        laurea in Ingegneria Informatica e Automatica.
-      </span>
-
-      <div class="container row text-center my-5 mx-auto">
-        <span class="my-2"> Ideato e realizzato da: </span>
-        <div class="col my-2">
-          <div class="picture d-flex justify-content-center align-items-center mx-auto mb-2">
-            <h1 class="m-0">M</h1>
-          </div>
-          <span>Michael Mancini</span>
-          <br />
-          <span class="matricola">1884654</span>
+        <!-- About Us -->
+        <div class="text-center text-white mx-5" id="AboutUs">
+            <h1 class="m-0">Chi siamo</h1>
+            <span>
+                Nato dall'idea di portare nel mondo virtuale le librerie, Bookverse è
+                il progetto pratico per Linguaggi e Tecnologie per il Web del corso di
+                laurea in Ingegneria Informatica e Automatica. Ideato e realizzato da: 
+            </span>
+            <div class="container-md row text-center mt-3 mb-3 mx-auto">
+                <div class="col-md mt-md-5 mb-3 h-100">
+                    <div class="picture d-flex justify-content-center align-items-center mx-auto mb-2 w-25 h-100">
+                        <h1 class="m-0">M</h1>
+                    </div>
+                    <span>Michael Mancini</span>
+                    <span class="matricola">1884654</span>
+                </div>
+                <div class="col-md mt-md-5 mb-3 h-100">
+                    <div class="picture d-flex justify-content-center align-items-center mx-auto mb-2 w-25 h-100">
+                        <h1 class="m-0">L</h1>
+                    </div>
+                    <span>Lorenzo Gizzi</span>
+                    <span class="matricola">1907374</span>
+                </div>
+            </div>
         </div>
-        <div class="col my-2">
-          <div class="picture picture d-flex justify-content-center align-items-center mx-auto mb-2">
-            <h1 class="m-0">L</h1>
-          </div>
-          <span>Lorenzo Gizzi</span>
-          <br />
-          <span class="matricola">1907374</span>
-        </div>
-      </div>
-    </div>
-    <!--/ About Us -->
+        <!--/ About Us -->
 
     <!-- Our Social -->
     <div class="text-center text-white mx-5 pb-3">
-      <h1 class="m-0">La tua opinione è importante!</h1>
+      <h1 class="m-0 w-100">La tua opinione è importante!</h1>
       <span>
         Tramite un messaggio anonimo facci sapere come poter migliorare il servizio!
       </span>

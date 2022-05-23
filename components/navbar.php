@@ -1,5 +1,5 @@
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-body shadow rounded-3 m-2 p-2">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-body shadow rounded-3 m-2 p-2 w-auto">
       <div class="container-fluid">
           <a class="navbar-brand text-start m-0" href=<?php if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) echo "./";
                                                         else echo "./welcome.php" ?>>

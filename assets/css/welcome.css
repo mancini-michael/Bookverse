@@ -112,6 +112,11 @@ textarea {
   resize: none;
 }
 
+.user-icon h1 {
+  font-family: "Babylonica", cursive;
+  font-size: var(--welcome-h1-fs);
+}
+
 @media screen and (max-width: 992px) {
   .welcome h1 {
     font-family: "Babylonica", cursive;
@@ -120,6 +125,11 @@ textarea {
 
   .welcome span {
     font-size: var(--welcome-span-fs-sm);
+  }
+
+  .user-icon h1 {
+    font-family: "Babylonica", cursive;
+    font-size: var(--welcome-h1-fs-sm);
   }
 }
 
@@ -131,6 +141,11 @@ textarea {
 
   .welcome span {
     font-size: var(--welcome-span-fs-sm);
+  }
+
+  .user-icon h1 {
+    font-family: "Babylonica", cursive;
+    font-size: var(--welcome-h1-fs-sm);
   }
 
   .picture {

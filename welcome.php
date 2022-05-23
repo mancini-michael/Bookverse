@@ -45,8 +45,8 @@
 
         ?>
 
-        <div class="col-lg-3 my-lg-auto m-auto mb-5">
-            <div class="user-icon d-flex justify-content-center align-items-center mx-auto">
+        <div class="col-lg-3 my-lg-auto m-md-auto mt-5 mb-3">
+            <div class="user-icon d-flex justify-content-center align-items-center mx-auto w-50 h-100">
                 <h1 class="m-0"><?php echo $_SESSION["nome"][0]; ?></h1>
             </div>
         </div>
@@ -62,9 +62,17 @@
                     <span> <b>città:</b> <?php echo $_SESSION["citta"]; ?> </span>
                     <span> <b>CAP:</b> <?php echo $_SESSION["cap"]; ?> </span>
                 </div>
-                <a href="./comments.php" class="btn btn-primary mt-3 mx-1">I tuoi commenti</a>
-                <a href="./shopping-cart.php" class="btn btn-primary mt-3 mx-1">Il tuo carrello</a>
-                <a href="./change-psw.php" class="btn btn-primary mt-3 mx-1">Cambia password</a>
+                <div class="row mx-auto">
+                    <div class="col-md my-auto">
+                        <a href="./comments.php" class="btn btn-primary mt-3 w-100">I tuoi commenti</a>
+                    </div>
+                    <div class="col-md my-auto">
+                        <a href="./shopping-cart.php" class="col-md btn btn-primary mt-3 w-100">Il tuo carrello</a>
+                    </div>
+                    <div class="col-md my-auto">
+                        <a href="./change-psw.php" class="col-md btn btn-primary mt-3 w-100">Cambia password</a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="text-center mt-auto mb-1">
@@ -87,16 +95,16 @@
         </div>
 
         <div class="row m-0">
-            <div class="col text-center mx-5 my-2">
-                <div class="catalog mx-auto"></div>
+            <div class="col-md text-center mx-md-5 mx-auto my-2">
+                <div class="catalog mx-auto w-50"></div>
                 <div class="text-center my-2">
                     <span class="text-white">Sfoglia il catalogo</span>
                     <br />
                     <a href="./catalog.php" class="btn btn-primary my-2">Catalogo</a>
                 </div>
             </div>
-            <div class="col mx-5 my-2">
-                <div class="history mx-auto"></div>
+            <div class="col-md text-center mx-md-5 mx-auto my-2">
+                <div class="history mx-auto w-50"></div>
                 <div class="text-center my-2">
                     <span class="text-white">Visualizza i tuoi acquisti</span>
                     <br />
@@ -104,8 +112,8 @@
                             else echo "./history.php" ?> class="btn btn-primary my-2">Acquisti</a>
                 </div>
             </div>
-            <div class="col mx-5 my-2">
-                <div class="contact mx-auto"></div>
+            <div class="col-md text-center mx-md-5 mx-auto my-2">
+                <div class="contact mx-auto w-50"></div>
                 <div class="text-center my-2">
                     <span class="text-white">Non trovi quello che cerchi?</span>
                     <br />
@@ -121,25 +129,21 @@
             <span>
                 Nato dall'idea di portare nel mondo virtuale le librerie, Bookverse è
                 il progetto pratico per Linguaggi e Tecnologie per il Web del corso di
-                laurea in Ingegneria Informatica e Automatica.
+                laurea in Ingegneria Informatica e Automatica. Ideato e realizzato da: 
             </span>
-
-            <div class="container row text-center my-5 mx-auto">
-                <span class="my-2"> Ideato e realizzato da: </span>
-                <div class="col my-2">
-                    <div class="picture d-flex justify-content-center align-items-center mx-auto mb-2">
+            <div class="container-md row text-center mt-3 mb-3 mx-auto">
+                <div class="col-md mt-md-5 mb-3 h-100">
+                    <div class="picture d-flex justify-content-center align-items-center mx-auto mb-2 w-25 h-100">
                         <h1 class="m-0">M</h1>
                     </div>
                     <span>Michael Mancini</span>
-                    <br />
                     <span class="matricola">1884654</span>
                 </div>
-                <div class="col my-2">
-                    <div class="picture picture d-flex justify-content-center align-items-center mx-auto mb-2">
+                <div class="col-md mt-md-5 mb-3 h-100">
+                    <div class="picture d-flex justify-content-center align-items-center mx-auto mb-2 w-25 h-100">
                         <h1 class="m-0">L</h1>
                     </div>
                     <span>Lorenzo Gizzi</span>
-                    <br />
                     <span class="matricola">1907374</span>
                 </div>
             </div>
