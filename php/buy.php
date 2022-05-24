@@ -28,6 +28,15 @@ if ($connection) {
             $q2 = "INSERT INTO acquisti_utente VALUES ($1,$2,$3)";
             $result2 = pg_query_params($connection, $q2, array($email, $isbn, $prezzo));
         }
+        
+        $q = "SELECT prezzo FROM carrello_utente WHERE email=$1";
+        $result = pg_query_params($connection, $q, array($email));
+        $totale = pg_fetch_all($result);
+        $prezzo_complessivo = 0;
+        for($i = 0; $i < count($totale); $i++) {
+            $prezzo_complessivo = $prezzo_complessivo + floatval($totale[$i]["prezzo"]);
+        } 
+
         $q3 = "DELETE FROM carrello_utente WHERE email=$1";
         $result3 = pg_query_params($connection, $q3, array($email));
         
@@ -42,7 +51,7 @@ if ($connection) {
         $mail->Password = email_psw;
         $mail->Subject = "Acquisto - Bookverse";
         $mail->setFrom(email);
-        $mail->Body = "Il tuo acquisto e' andato a buon fine";
+        $mail->Body = "Il tuo acquisto e' andato a buon fine, totale speso: $prezzo_complessivo €";
         $mail->addAddress ($email);
         $mail->Send();
         //$mail->smtpClose();
