@@ -33,11 +33,14 @@
                                 $result = pg_query_params($connection, $q, array($email));
                                 $totale = pg_fetch_all($result);
 
-                                for($i = 0; $i < count($totale); $i++) {
-                                    $libri = $totale[$i]["totale"];
+                                if($totale) {
+                                    for($i = 0; $i < count($totale); $i++) {
+                                        $libri = $totale[$i]["totale"];
+                                    }
+                                    echo $libri;
+                                } else {
+                                    echo "vuoto";
                                 }
-
-                                echo $libri;
                             } 
 
                         ?>
@@ -54,9 +57,11 @@
                             $totale = pg_fetch_all($result);
                             $prezzo_complessivo = 0;
 
-                            for($i = 0; $i < count($totale); $i++) {
-                                $prezzo_complessivo = $prezzo_complessivo + floatval($totale[$i]["prezzo"]);
-                            }
+                            if($totale) {
+                                for($i = 0; $i < count($totale); $i++) {
+                                    $prezzo_complessivo = $prezzo_complessivo + floatval($totale[$i]["prezzo"]);
+                                }
+                            } 
 
                             echo $prezzo_complessivo;
                         } 
