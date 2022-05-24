@@ -18,8 +18,46 @@
     <?php include("components/navbar.php"); ?>
 
     <div class="shopping-cart d-flex justify-content-center align-items-center flex-column">
-        <?php include("components/flash-payment-form.php"); ?>
-    </div>
+        <div class="container-md text-center mt-5 py-5">
+                    <div class="container-md text-white bg-dark rounded w-50 mt-2 py-2">
+                        <h3>Resoconto:</h3>
+                        <div class="d-flex flex-column">
+                            <span>Elementi: 
+                                <?php
+                                
+                                    require("php/config.php");
+
+                                    if(isset($_GET["isbn"]) && $connection) {
+                                        $q = "SELECT titolo FROM catalogo WHERE isbn=$1";
+                                        $result = pg_query_params($connection, $q, array($_GET["isbn"]));
+                                        $totale = pg_fetch_all($result);
+                                        echo $totale[0]["titolo"];   
+                                    }
+
+                                ?>
+                            </span>  
+                            <span>prezzo:
+                            <?php
+                                
+                                require("php/config.php");
+
+                                if(isset($_GET["isbn"])) {
+                                    $email = $_SESSION["email"];
+                                    $q = "SELECT prezzo FROM catalogo WHERE isbn=$1";
+                                    $result = pg_query_params($connection, $q, array($_GET["isbn"]));
+                                    $totale = pg_fetch_all($result);
+                                    echo $totale[0]["prezzo"];                            
+                                } 
+                                
+                            ?>
+                            €
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <?php include("components/flash-payment-form.php"); ?>
+            </div>
+        </div>
 
     <?php include("components/footer.php"); ?>
 
