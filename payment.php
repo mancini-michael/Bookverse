@@ -27,21 +27,25 @@
                         
                             require("php/config.php");
 
-                            if($connection) {
-                                $email = $_SESSION["email"];
-                                $q = "SELECT email, count(*) AS totale FROM carrello_utente WHERE email=$1 GROUP BY email";
-                                $result = pg_query_params($connection, $q, array($email));
-                                $totale = pg_fetch_all($result);
-
-                                if($totale) {
-                                    for($i = 0; $i < count($totale); $i++) {
-                                        $libri = $totale[$i]["totale"];
+                            if(isset($_GET["isbn"])) {
+                                echo 1;
+                            } else {
+                                if($connection) {
+                                    $email = $_SESSION["email"];
+                                    $q = "SELECT email, count(*) AS totale FROM carrello_utente WHERE email=$1 GROUP BY email";
+                                    $result = pg_query_params($connection, $q, array($email));
+                                    $totale = pg_fetch_all($result);
+    
+                                    if($totale) {
+                                        for($i = 0; $i < count($totale); $i++) {
+                                            $libri = $totale[$i]["totale"];
+                                        }
+                                        echo $libri;
+                                    } else {
+                                        echo "vuoto";
                                     }
-                                    echo $libri;
-                                } else {
-                                    echo "vuoto";
-                                }
-                            } 
+                                } 
+                            }
 
                         ?>
                     </span>  
@@ -50,21 +54,29 @@
                         
                         require("php/config.php");
 
-                        if($connection) {
+                        if(isset($_GET["isbn"])) {
                             $email = $_SESSION["email"];
-                            $q = "SELECT prezzo FROM carrello_utente WHERE email=$1";
-                            $result = pg_query_params($connection, $q, array($email));
+                            $q = "SELECT prezzo FROM carrello_utente WHERE email=$1 AND isbn=$2";
+                            $result = pg_query_params($connection, $q, array($email, $_GET["isbn"]));
                             $totale = pg_fetch_all($result);
-                            $prezzo_complessivo = 0;
-
-                            if($totale) {
-                                for($i = 0; $i < count($totale); $i++) {
-                                    $prezzo_complessivo = $prezzo_complessivo + floatval($totale[$i]["prezzo"]);
-                                }
+                            echo $totale[0]["prezzo"];                            
+                        } else {
+                            if($connection) {
+                                $email = $_SESSION["email"];
+                                $q = "SELECT prezzo FROM carrello_utente WHERE email=$1";
+                                $result = pg_query_params($connection, $q, array($email));
+                                $totale = pg_fetch_all($result);
+                                $prezzo_complessivo = 0;
+    
+                                if($totale) {
+                                    for($i = 0; $i < count($totale); $i++) {
+                                        $prezzo_complessivo = $prezzo_complessivo + floatval($totale[$i]["prezzo"]);
+                                    }
+                                } 
+    
+                                echo $prezzo_complessivo;
                             } 
-
-                            echo $prezzo_complessivo;
-                        } 
+                        }
 
                     ?>
                     €
