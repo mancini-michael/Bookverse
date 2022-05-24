@@ -25,7 +25,7 @@
         <?php
 
         if (isset($_GET["send"])) {
-            echo "<div class=\"container alert alert-danger text-center\">
+            echo "<div class=\"container alert alert-danger text-center w-25\">
                     Utente già registrato alla libreria.
                   </div>";
         }

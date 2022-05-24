@@ -24,8 +24,8 @@
         <?php
         if (isset($_GET["changePassword"])) {
             echo "
-                <div class=\"container-md1\">
-                    <div class=\"alert alert-success text-center mt-5\">
+                <div class=\"container-md\">
+                    <div class=\"alert alert-success text-center mt-5 mx-auto w-50\">
                         Password modificata con successo
                     </div>
                 </div>";
@@ -37,7 +37,7 @@
         if (isset($_GET["acquisto"])) {
             echo "
             <div class=\"container-md\">
-                <div class=\"alert alert-success text-center mt-5\">
+                <div class=\"alert alert-success text-center mt-5 mx-auto w-50\">
                     Acquisto andato a buon fine
                 </div>
             </div>";
@@ -129,7 +129,9 @@
             <span>
                 Nato dall'idea di portare nel mondo virtuale le librerie, Bookverse è
                 il progetto pratico per Linguaggi e Tecnologie per il Web del corso di
-                laurea in Ingegneria Informatica e Automatica. Ideato e realizzato da: 
+                laurea in Ingegneria Informatica e Automatica. 
+                <br />
+                Ideato e realizzato da: 
             </span>
             <div class="container-md row text-center mt-3 mb-3 mx-auto">
                 <div class="col-md mt-md-5 mb-3 h-100">

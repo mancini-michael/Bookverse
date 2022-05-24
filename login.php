@@ -25,7 +25,7 @@
         <?php
 
         if (isset($_GET["mail"])) {
-            echo "<div class=\"container alert alert-danger text-center w-50\">
+            echo "<div class=\"container alert alert-danger text-center w-25\">
                         Email errata.
                     </div>";
         }
@@ -35,7 +35,7 @@
         <?php
 
         if (isset($_GET["passw"])) {
-            echo "<div class=\"container alert alert-danger text-center w-50\">
+            echo "<div class=\"container alert alert-danger text-center w-25\">
                     Password errata.
                   </div>";
         }

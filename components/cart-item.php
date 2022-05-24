@@ -1,4 +1,4 @@
-<div class="text-center col my-3 pt-5">
+<div class="text-center col-md mb-2 pt-5">
     <div class="card mx-auto">
         <img src=<?php echo $img; ?> class="img-fluid" alt=<?php echo $nome; ?>>
         <div class="card-body">

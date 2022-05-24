@@ -23,7 +23,7 @@
             <?php
 
             if (isset($_GET["send"])) {
-                echo "<div class=\"container alert alert-danger text-center\">
+                echo "<div class=\"container alert alert-danger text-center w-50\">
                         Aggiungere un titolo e un commento.
                      </div>";
             }

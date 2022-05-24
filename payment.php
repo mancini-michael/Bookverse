@@ -18,6 +18,55 @@
     <?php include("components/navbar.php"); ?>
 
     <div class="shopping-cart d-flex justify-content-center align-items-center flex-column">
+    <div class="container-md text-center mt-5 py-5">
+            <div class="container-md text-white bg-dark rounded w-50 mt-2 py-2">
+                <h3>Resoconto:</h3>
+                <div class="d-flex flex-column">
+                    <span>Elementi:
+                        <?php
+                        
+                            require("php/config.php");
+
+                            if($connection) {
+                                $email = $_SESSION["email"];
+                                $q = "SELECT email, count(*) AS totale FROM carrello_utente WHERE email=$1 GROUP BY email";
+                                $result = pg_query_params($connection, $q, array($email));
+                                $totale = pg_fetch_all($result);
+
+                                for($i = 0; $i < count($totale); $i++) {
+                                    $libri = $totale[$i]["totale"];
+                                }
+
+                                echo $libri;
+                            } 
+
+                        ?>
+                    </span>  
+                    <span>prezzo:
+                    <?php
+                        
+                        require("php/config.php");
+
+                        if($connection) {
+                            $email = $_SESSION["email"];
+                            $q = "SELECT prezzo FROM carrello_utente WHERE email=$1";
+                            $result = pg_query_params($connection, $q, array($email));
+                            $totale = pg_fetch_all($result);
+                            $prezzo_complessivo = 0;
+
+                            for($i = 0; $i < count($totale); $i++) {
+                                $prezzo_complessivo = $prezzo_complessivo + floatval($totale[$i]["prezzo"]);
+                            }
+
+                            echo $prezzo_complessivo;
+                        } 
+
+                    ?>
+                    €
+                    </span>
+                </div>
+            </div>
+        </div>
         <?php include("php/payment.php"); ?>
     </div>
 
